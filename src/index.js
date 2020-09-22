@@ -11,14 +11,14 @@ import api from "./services/api";
 import rootSaga from "./redux/rootSaga";
 import "antd/dist/antd.css";
 
-const onBeforeLift = store => () => {
-  const { loginReducer } = store.getState();
-  api.setAuthRequest(loginReducer.userDetail?.token);
-};
+// const onBeforeLift = store => () => {
+//   const { loginReducer } = store.getState();
+//   api.setAuthRequest(loginReducer.userDetail?.token);
+// };
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate onBeforeLift={onBeforeLift(store)} loading={null} persistor={persistor}>
+    <PersistGate loading={null} persistor={persistor}>
       <App />
     </PersistGate>
   </Provider>,

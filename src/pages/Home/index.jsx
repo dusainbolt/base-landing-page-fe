@@ -41,7 +41,7 @@ function Home() {
         <div className="home__wrapper--icon left">
           <LeftCircleOutlined onClick={onPrevious} />
         </div>
-        <Carousel ref={node => (slide = node)} dotPosition={dot}>
+        <Carousel draggable ref={node => (slide = node)} dotPosition={dot}>
           {renderListCarousel()}
         </Carousel>
         <div className="home__wrapper--icon right">
