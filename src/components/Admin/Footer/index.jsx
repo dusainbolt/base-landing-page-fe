@@ -27,7 +27,7 @@ export default function commonFooter() {
           <div className="footer__top--contact">
             <Search
               placeholder="Nhập email"
-              enterButton="Search"
+              enterButton="Đăng ký"
               size="large"
               onSearch={value => console.log(value)}
             />
@@ -66,16 +66,16 @@ export default function commonFooter() {
               </ul>
             </Col>
             <Col className="footer__bottom--col col-payment" span={5}>
-            <Button ghost>Default</Button>
-            <div className="footer__bottom--title payment">KÊNH THANH TOÁN</div>
-            <ul>
-              <li>s</li>
-              <li>s</li>
-              <li>s</li>
-              <li>s</li>
-              <li>s</li>
-              <li>s</li>
-            </ul>
+              <Button ghost>Hỏi đáp STRAVEL</Button>
+              <div className="footer__bottom--title payment">KÊNH THANH TOÁN</div>
+              <ul>
+                <li>s</li>
+                <li>s</li>
+                <li>s</li>
+                <li>s</li>
+                <li>s</li>
+                <li>s</li>
+              </ul>
             </Col>
           </Row>
         </div>

@@ -1,0 +1,25 @@
+[debug] [2020-09-22T16:59:21.340Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:59:21.341Z] Command:       /usr/local/bin/firebase /home/dusainbolt/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-09-22T16:59:21.341Z] CLI Version:   8.10.0
+[debug] [2020-09-22T16:59:21.342Z] Platform:      linux
+[debug] [2020-09-22T16:59:21.342Z] Node Version:  v12.18.1
+[debug] [2020-09-22T16:59:21.346Z] Time:          Tue Sep 22 2020 23:59:21 GMT+0700 (Indochina Time)
+[debug] [2020-09-22T16:59:21.346Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T16:59:21.346Z] 
+[debug] [2020-09-22T16:59:21.355Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-22T16:59:21.356Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/dusainbolt/project/freelancer/stravel
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+

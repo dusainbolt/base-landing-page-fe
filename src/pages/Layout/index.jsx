@@ -33,7 +33,7 @@ function App({ component: Mycomponent, classes, name, ...remainProps }) {
               <CommonHeader refHeader={headerRef}/>
             </Header>
             <Layout className="site-content">
-              <Content className="site-content-background">
+              <Content>
                 <Mycomponent {...routeProps} />
                 <Footer />
               </Content>
