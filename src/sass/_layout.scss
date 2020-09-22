@@ -7,6 +7,7 @@
 body {
   font-size: $base-font-size !important;
   font-family: $base-font-family !important;
+  color: $black-color;
 }
 
 h1 {
@@ -62,8 +63,12 @@ a {
 .site-layout .site-layout-background {
   background: #fff;
 }
-.site-layout-web-background {
+.site-content-background {
   margin-top: 30px;
+}
+
+.site-content{
+  margin-top: -64px;
 }
 
 .ant-message {

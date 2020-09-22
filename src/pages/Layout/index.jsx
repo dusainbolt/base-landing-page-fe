@@ -2,23 +2,25 @@ import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { Layout } from "antd";
 import CommonHeader from "../../components/Admin/Header";
-import "./index.scss";
 import { showBodyHeader, showTopHeader } from "../../utils";
 import Footer from "../../components/Admin/Footer";
+import { useRef } from "react";
 
 const { Header, Content } = Layout;
 function App({ component: Mycomponent, classes, name, ...remainProps }) {
+
+  const headerRef = useRef(null);
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
   const handleScroll = event => {
     let scrollTop = Math.round(event.target.scrollingElement.scrollTop);
-    let header = document.getElementById("header-web");
-    if (scrollTop > 400 && header) {
-      showTopHeader(header);
-    } else if (scrollTop < 400 && header) {
-      showBodyHeader(header);
+    if (scrollTop > 100 && headerRef) {
+      showTopHeader(headerRef);
+    } else if (scrollTop < 100 && headerRef) {
+      showBodyHeader(headerRef);
     }
   };
   return (
@@ -27,11 +29,11 @@ function App({ component: Mycomponent, classes, name, ...remainProps }) {
       render={routeProps => {
         return (
           <Layout className="layout-web">
-            <Header id="header-web" className="layout-web__header-web">
-              <CommonHeader />
+            <Header className="layout-web__header-web">
+              <CommonHeader refHeader={headerRef}/>
             </Header>
-            <Layout className="site-layout-web">
-              <Content className="site-layout-web-background">
+            <Layout className="site-content">
+              <Content className="site-content-background">
                 <Mycomponent {...routeProps} />
                 <Footer />
               </Content>

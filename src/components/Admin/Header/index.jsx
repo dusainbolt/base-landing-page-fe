@@ -1,98 +1,45 @@
 import React, { useState } from "react";
-import { MenuOutlined, UserOutlined, MessageFilled, LogoutOutlined } from "@ant-design/icons";
-import "./index.scss";
-import { Typography, Avatar, Popover, Modal } from "antd";
 import { useSelector, useDispatch } from "react-redux";
-import LogoHeader from "../../../common/image/LogoSidebar.png";
-import ChangePasswordModal from "./ChangePasswordModal";
+import LogoHeader from "../../../common/image/LOGO.png";
 import { useMemo } from "react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useCallback } from "react";
+// import Icon1 from "../../../common/image/du-lich-sapa-thang-11-1-1000x540.svg";
+// import Icon2 from "../../../common/image/iconfinder_multimedia-07_2849829.svg";
+// import Icon3 from "../../../common/image/iconfinder_multimedia-12_2849824.svg";
+import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import { MenuTop } from "../../../common/configLandingPage";
 
-const { Paragraph } = Typography;
-
-function CommonHeader({ toggleMenu }) {
+function CommonHeader({ toggleMenu, refHeader }) {
   const { t } = useTranslation();
-  const token = useSelector(state => state.loginReducer.auth?.token);
-  const userDetail = useSelector(state => state.loginReducer.userDetail);
-  const isLoadingChangePassword = useSelector(state => state.loginReducer.isLoadingChangePassword);
 
-  const dispatch = useDispatch();
-  const [visiblePopover, setVisiblePopover] = useState(false);
-  const [visibleModal, setVisibleModal] = useState(false);
-
-  const list = (
-    <ul className="list__profile">
-      <li className="list__item" onClick={() => openModalChangePassword()}>
-        <UserOutlined className="list__item--icon" /> Change Password
+  const renderMenuTop = () => {
+    return MenuTop.reverse().map((item, index)=>{
+      return (
+        <li key={index}>
+        <Link to={item.link}>{item.name}</Link>
       </li>
-      <li onClick={() => logout()} className="list__item">
-        <LogoutOutlined className="list__item--icon" /> Log Out
-      </li>
-    </ul>
-  );
-
-  const openModalChangePassword = () => {
-    handleVisibleChange();
-    setVisibleModal(true);
+      );
+    });
   };
-
-  const logout = () => {
-    // dispatch(actions.postAuthAdminStart(token));
-  };
-
-  const hideModal = () => {
-    setVisibleModal(false);
-  };
-
-  const handleVisibleChange = () => {
-    setVisiblePopover(!visiblePopover);
-  };
-
-  const handleChangePassword = useCallback(values => {
-    // dispatch(actions.postChangePasswordStart(values));
-  }, []);
-
-  const renderModalChangePassword = useMemo(() => {
-    return (
-      <ChangePasswordModal
-        receiveSubmit={handleChangePassword}
-        userDetail={userDetail}
-        onCancel={hideModal}
-        visible={visibleModal}
-      />
-    );
-  }, [visibleModal]);
-
-  useEffect(() => {
-    if (isLoadingChangePassword) {
-      hideModal();
-    }
-  }, [isLoadingChangePassword]);
 
   return (
-    <div className="header">
-      <MenuOutlined className="header__icon" onClick={toggleMenu} />
-      <div className="header__actor">
-        <Paragraph className="header__actor--logo" level={4}>
-          <img width="140" height="55" src={LogoHeader} alt="avatar" />
-        </Paragraph>
-        <div className="header__actor--profile">
-          <MessageFilled className="profile__icon--message" />
-          <Popover
-            placement="bottomRight"
-            content={list}
-            trigger="click"
-            className="profile__popover"
-            visible={visiblePopover}
-            onVisibleChange={handleVisibleChange}
-          >
-            <Avatar className="profile__icon--avatar" icon={<UserOutlined />} />
-          </Popover>
+    <div className="header" ref={refHeader}>
+      <img className="header__logo" src={LogoHeader} alt="logo" />
+      <div className="header__menu">
+        <ul>
+          {renderMenuTop()}
+        </ul>
+      </div>
+      <div className="header__icon">
+        <div className="header__icon-wrapper">
+          <SearchOutlined className="header__icon--item" />
+          <ShoppingCartOutlined className="header__icon--item" />
+          <UserOutlined className="header__icon--item" />
         </div>
       </div>
-      {renderModalChangePassword}
     </div>
   );
 }

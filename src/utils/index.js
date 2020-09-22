@@ -25,15 +25,15 @@ export function countSecondToTime(secs) {
 }
 
 export function showTopHeader(header) {
-  header.style.boxShadow = "1px 1px 5px #ddd";
-  header.style.position = "fixed";
-  header.style.backgroundColor = "white";
+  header.current.style.boxShadow = "1px 1px 5px #ddd";
+  header.current.style.position = "fixed";
+  header.current.style.backgroundColor = "white";
 }
 
 export function showBodyHeader(header) {
-  header.style.boxShadow = "none";
-  header.style.position = "absolute";
-  header.style.backgroundColor = "transparent";
+  header.current.style.boxShadow = "none";
+  header.current.style.position = "absolute";
+  header.current.style.backgroundColor = "transparent";
 }
 
 export function checkStringRange(value, min, max) {
