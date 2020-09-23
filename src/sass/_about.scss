@@ -1,0 +1,31 @@
+.about {
+    &__row{
+        &--content{
+            padding: 72px 0;
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            &__title{
+                font-size: 36px;
+                text-align: center;
+                color: $primary-color-bold;
+                margin-bottom: 50px;
+            }
+            >p{
+                font-size: 18px;
+            }
+            &__bottom{
+                margin-top: 50px;
+            }
+        }
+        &.bg{
+            background-color: white;
+        }
+    }
+    .image-demo{
+        width: 100px;
+        height: 100px;
+        background-color: #ababab;
+        margin: auto;
+    }
+}

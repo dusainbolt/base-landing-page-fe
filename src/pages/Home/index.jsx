@@ -47,7 +47,7 @@ function Home() {
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
               {index !== IMG_SLIDE_TOP.length - 1 ? <img src={item} /> :
-              
+
                 <video loop autoPlay>
                   <source src={item} type="video/mp4" />
                   Your browser does not support the video tag.

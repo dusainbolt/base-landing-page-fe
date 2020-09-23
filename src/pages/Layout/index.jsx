@@ -9,13 +9,12 @@ import { useRef } from "react";
 const { Header, Content } = Layout;
 function App({ component: Mycomponent, classes, name, ...remainProps }) {
 
-  const headerRef = useRef(null);
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
   const handleScroll = event => {
+    const headerRef = document.getElementById("headerWeb");
     let scrollTop = Math.round(event.target.scrollingElement.scrollTop);
     if (scrollTop > 64 && headerRef) {
       showTopHeader(headerRef);
@@ -30,7 +29,7 @@ function App({ component: Mycomponent, classes, name, ...remainProps }) {
         return (
           <Layout className="layout-web">
             <Header className="layout-web__header-web">
-              <CommonHeader refHeader={headerRef}/>
+              <CommonHeader />
             </Header>
             <Layout className="site-content">
               <Content>

@@ -71,6 +71,12 @@
       }
     }
   }
+  &__carousel-page{
+    height: 550px;
+    .slick-dots{
+      top: 540px;
+    }
+  }
   .slick-dots {
     > li {
       background-color: #bfe1f5;

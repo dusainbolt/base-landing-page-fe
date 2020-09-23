@@ -6,25 +6,26 @@ import IMG_TOP_4 from "./image/slideTop/videoTop.mov";
 
 export const MenuTop = [
   {
-    name: "Home",
-    link: "/",
-  },
-  {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Blog",
-    link: "/blog",
+    name: "Contact",
+    link: "/contact",
   },
   {
     name: "Tour",
     link: "/tour",
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Blog",
+    link: "/blog",
   },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Home",
+    link: "/",
+  },
+
 ];
 
 export const IMG_SLIDE_TOP = [IMG_TOP_1, IMG_TOP_2, IMG_TOP_3,  IMG_TOP_4];
@@ -41,6 +42,25 @@ export const CONTENT_TRAVEL = {
     "Ở giữa, Thành phố Đà Nẵng hiện đại mang đến hương vị của một số khu nghỉ dưỡng sang trọng nhất và các sân gôn hàng đầu của Việt Nam - cũng như một trong những bãi biển đẹp nhất của đất nước. Và cách đó vài giờ, các ",
   ],
 };
+
+export const CONTENT_ABOUT = {
+  ABOUT_US: [
+    "STRAVEL đem đến cho bạn giải pháp thật đơn giản để khám phá các điểm tham quan và hoạt động du lịch",
+    "Khám phá và đặt dịch vụ tại điểm đến với giá tốt nhất. Với vài cú nhấp chuột, bạn có thể bắt tàu cao tốc Hongkong Airport Express , để gia đình vui chơi thoải thích tại Tokyo Disneyland hoặc sững sờ trước thế giới tuyệt đẹp của sóng biển Bali.",
+  ],
+  TAM_NHIN: [
+    "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
+    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
+  ],
+  SU_MENH: [
+    "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
+    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
+  ],
+  CAM_KET: [
+    "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
+    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
+  ]
+}
 
 export const IMG_SLIDE_ADS = [IMG_TOP_2, IMG_TOP_3];
 

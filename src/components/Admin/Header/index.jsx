@@ -13,7 +13,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
   const { t } = useTranslation();
 
   const renderMenuTop = () => {
-    return MenuTop.reverse().map((item, index) => {
+    return MenuTop.map((item, index) => {
       return (
         <li className={index === MenuTop.length - 1 && "active"} key={index}>
           <Link to={item.link}>{item.name}</Link>
@@ -23,7 +23,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
   };
 
   return (
-    <div className="header" ref={refHeader}>
+    <div className="header" id="headerWeb">
       <img className="header__logo" src={LogoHeader} alt="logo" />
       <div className="header__menu">
         <ul>{renderMenuTop()}</ul>
