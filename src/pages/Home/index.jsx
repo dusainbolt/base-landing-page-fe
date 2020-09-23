@@ -90,88 +90,104 @@ function Home() {
       </div>
       <div className="home__container">
         <BaMien />
-        <div className="home__wrapper carousel-ads">
-          <div className="home__wrapper--icon left">
-            <LeftOutlined onClick={onPreviousAds} />
-          </div>
-          <Carousel draggable ref={node => (slideAds = node)} dotPosition={dot}>
-            {renderListCarouselAds()}
-          </Carousel>
-          <div className="home__wrapper--icon right">
-            <RightOutlined onClick={onNextAds} />
-          </div>
-        </div>
-        <div className="home__row">
-          <h1 className="home__row--title">DỊCH VỤ PHỔ BIẾN</h1>
-          <Row>
-            <Col span={6}>
-              <div className="home__row--col-content">
-                <CardContent className="card--content" img={IMG_MIEN_BAC} />
+        <LazyLoad height={800} throttle={400}>
+          <FadeIn delay={100} transitionDuration={500}>
+            <div className="home__wrapper carousel-ads">
+              <div className="home__wrapper--icon left">
+                <LeftOutlined onClick={onPreviousAds} />
               </div>
-            </Col>
-            <Col span={6}>
-              <div className="home__row--col-content">
-                <CardContent img={IMG_MIEN_BAC} />
+              <Carousel draggable ref={node => (slideAds = node)} dotPosition={dot}>
+                {renderListCarouselAds()}
+              </Carousel>
+              <div className="home__wrapper--icon right">
+                <RightOutlined onClick={onNextAds} />
               </div>
-            </Col>
-            <Col span={6}>
-              <div className="home__row--col-content">
-                <CardContent img={IMG_MIEN_BAC} />
-              </div>
-            </Col>
-            <Col span={6}>
-              <div className="home__row--col-content">
-                <CardContent img={IMG_MIEN_BAC} />
-              </div>
-            </Col>
-            <div className="button">
-              <Button className="primary no-bg">Xem thêm</Button>
             </div>
-          </Row>
-        </div>
-        <div className="home__row">
-          <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
-          <Row>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-            <Col span={4}>
-              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-            </Col>
-          </Row>
-        </div>
-        <div className="home__row">
-          <h1 className="home__row--title">ĐIỂM TIN DU LỊCH</h1>
-          <Row>
-            <Col span={8}>
-              <div className="home__row--col-content">
-                <CardContent className="card--content" img={IMG_MIEN_BAC} />
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="home__row--col-content">
-                <CardContent img={IMG_MIEN_BAC} />
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="home__row--col-content">
-                <CardContent img={IMG_MIEN_BAC} />
-              </div>
-            </Col>
-          </Row>
-        </div>
+          </FadeIn>
+        </LazyLoad>
+        <LazyLoad height={800} throttle={400}>
+          <FadeIn delay={100} transitionDuration={500}>
+            <div className="home__row">
+              <h1 className="home__row--title">DỊCH VỤ PHỔ BIẾN</h1>
+              <Row>
+                <Col span={6}>
+                  <div className="home__row--col-content">
+                    <CardContent className="card--content" img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className="home__row--col-content">
+                    <CardContent img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className="home__row--col-content">
+                    <CardContent img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className="home__row--col-content">
+                    <CardContent img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <div className="button">
+                  <Button className="primary no-bg">Xem thêm</Button>
+                </div>
+              </Row>
+            </div>
+          </FadeIn>
+        </LazyLoad>
+        <LazyLoad height={800} throttle={400}>
+          <FadeIn delay={100} transitionDuration={500}>
+            <div className="home__row">
+              <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
+              <Row>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+                <Col span={4}>
+                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+                </Col>
+              </Row>
+            </div>
+          </FadeIn>
+        </LazyLoad>
+        <LazyLoad height={800} throttle={400}>
+          <FadeIn delay={100} transitionDuration={500}>
+            <div className="home__row">
+              <h1 className="home__row--title">ĐIỂM TIN DU LỊCH</h1>
+              <Row>
+                <Col span={8}>
+                  <div className="home__row--col-content">
+                    <CardContent className="card--content" img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className="home__row--col-content">
+                    <CardContent img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className="home__row--col-content">
+                    <CardContent img={IMG_MIEN_BAC} />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </FadeIn>
+        </LazyLoad>
       </div>
     </div>
   );
