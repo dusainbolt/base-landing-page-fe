@@ -3,10 +3,9 @@ import FadeIn from "react-fade-in";
 import { actions } from "./actions";
 import BackTop from "../../components/BackTop";
 import CardContent from "../../components/CardContent";
-import IMG_BG_TOP from "../../common/image/slideTop/IMG_7707.PNG";
 import { Button, Carousel, Col, Row } from "antd";
 import LazyLoad from "react-lazyload";
-import IMG_MIEN_BAC from "../../common/image/slideTop/1192471.jpg";
+import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_1.jpg";
 import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
 import {
   LeftCircleOutlined,
@@ -47,13 +46,13 @@ function Home() {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              {index !== IMG_BG_TOP.length - 1 && <img src={item} />}
-              {index === 0 && IMG_BG_TOP.length - 1 && (
+              {index !== IMG_SLIDE_TOP.length - 1 ? <img src={item} /> :
+              
                 <video loop autoPlay>
                   <source src={item} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              )}
+              }
             </FadeIn>
           </LazyLoad>
         </div>
