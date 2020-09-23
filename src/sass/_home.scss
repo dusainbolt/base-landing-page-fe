@@ -5,6 +5,36 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    &.carousel-ads {
+      max-width: 1160px;
+      height: 180px;
+      margin: 120px auto;
+      overflow: unset;
+      .ant-carousel {
+        border-radius: 8px;
+        height: 180px;
+        overflow: hidden;
+        .slick-dots {
+          top: 170px;
+        }
+      }
+      .home__wrapper--icon {
+        top: 40%;
+        left: -17px;
+        background: white;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        .anticon {
+          font-size: 20px;
+        }
+        &.right {
+          right: -17px;
+          left: unset;
+        }
+      }
+    }
     video {
       width: 100%;
       min-height: 100vh;
@@ -26,8 +56,8 @@
       > span.anticon {
         font-size: 40px;
         opacity: 0.5;
-        &:hover{
-            opacity: 1;
+        &:hover {
+          opacity: 1;
         }
         > svg {
           color: $primary-color-bold;
@@ -35,7 +65,6 @@
       }
       &.left {
         left: 15px;
-        
       }
       &.right {
         right: 15px;
@@ -51,5 +80,115 @@
         background: $primary-color-bold !important;
       }
     }
+  }
+  &__container {
+    background-image: url("../common/image/cloud.png");
+    background-repeat: no-repeat;
+    background-size:100% 70%; 
+   }
+  &__row {
+    max-width: 1160px;
+    margin: auto;
+    margin-bottom: 70px;
+    &--col-content {
+      padding: 0 5px;
+      margin: auto;
+      margin-bottom: 50px;
+      .ant-card-cover {
+        height: 154px;
+        overflow: hidden;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      .ant-card {
+        border-radius: 8px;
+      }
+      .ant-card-meta-title {
+        color: $primary-color-bold;
+      }
+    }
+    &--title {
+      font-weight: 600;
+      font-size: 40px;
+    }
+    &--col-address {
+      width: 176px;
+      margin: auto;
+      margin-bottom: 50px;
+      height: 235px;
+      overflow: hidden;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+      &__image{
+        width: 100%;
+        >img{
+          width: 100%;
+        };
+      }
+      &__title{
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      &:hover{
+        box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+      }
+    }
+  }
+
+}
+
+.ant-card-bordered {
+  border: unset;
+}
+
+.travel-vn {
+  padding-top: 70px;
+  &__image-wrapper {
+    max-width: 800px;
+    max-height: 640px;
+    overflow: hidden;
+    margin: auto;
+    > img {
+      width: 100%;
+    }
+  }
+  &__content {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    &--wrapper {
+      max-width: 540px;
+      margin-right: auto;
+      &.left {
+        margin-left: auto;
+      }
+    }
+    &--title {
+      font-size: 40px;
+      font-weight: 600;
+      width: max-content;
+      margin: auto;
+      margin-bottom: 40px;
+      border-bottom: solid 2px $primary-color-bold;
+    }
+    .button {
+      margin-top: 70px;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button.primary {
+    min-width: 200px;
   }
 }

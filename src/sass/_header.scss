@@ -38,8 +38,6 @@
         margin-left: auto;
     }
     &__menu{
-        max-width: 1000px;
-        min-width: 500px;
         width: 80%;
         height: 64px;
         margin-left: auto;
@@ -48,11 +46,20 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            display: flex;
+            align-content: flex-end;
+            flex-direction: row-reverse;
         }
         li{
             float: right;
-            padding: 0 35px;
             transition: .3s;
+            text-align: center;
+            width: max-content;
+            height: 64px;
+            margin-left: 25px;
+            &.active{
+                border-bottom: solid 2px $primary-color-bold;
+            }
             a{
                 color: $black-color;
                 padding: 14px 16px;

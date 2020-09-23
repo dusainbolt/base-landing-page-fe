@@ -15,7 +15,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
   const renderMenuTop = () => {
     return MenuTop.reverse().map((item, index) => {
       return (
-        <li key={index}>
+        <li className={index === MenuTop.length - 1 && "active"} key={index}>
           <Link to={item.link}>{item.name}</Link>
         </li>
       );

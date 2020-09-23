@@ -2,16 +2,28 @@ import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import { actions } from "./actions";
 import BackTop from "../../components/BackTop";
-import IMG_TOP from "../../common/image/IMG_7694.PNG";
-import { Carousel } from "antd";
+import CardContent from "../../components/CardContent";
+import IMG_BG_TOP from "../../common/image/slideTop/IMG_7707.PNG";
+import { Button, Carousel, Col, Row } from "antd";
 import LazyLoad from "react-lazyload";
-import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
-import { IMG_SLIDE_TOP } from "../../common/configLandingPage";
+import IMG_MIEN_BAC from "../../common/image/slideTop/1192471.jpg";
+import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
+import {
+  LeftCircleOutlined,
+  RightCircleOutlined,
+  RightOutlined,
+  LeftOutlined,
+} from "@ant-design/icons";
+import { IMG_SLIDE_TOP, IMG_SLIDE_ADS } from "../../common/configLandingPage";
+import BaMien from "./HomeComponent/BaMien";
+import CardAddress from "../../components/Dot";
+
 function Home() {
   const dot = {
     dotPosition: "bottom",
   };
   let slide = useRef(null);
+  let slideAds = useRef(null);
 
   const onPrevious = () => {
     slide.prev();
@@ -21,8 +33,36 @@ function Home() {
     slide.next();
   };
 
+  const onPreviousAds = () => {
+    slideAds.prev();
+  };
+
+  const onNextAds = () => {
+    slideAds.next();
+  };
+
   const renderListCarousel = () => {
     return IMG_SLIDE_TOP.map((item, index) => {
+      return (
+        <div key={index} className="home__wrapper--image">
+          <LazyLoad height={800} throttle={400}>
+            <FadeIn delay={100} transitionDuration={500}>
+              {index !== IMG_BG_TOP.length - 1 && <img src={item} />}
+              {index === 0 && IMG_BG_TOP.length - 1 && (
+                <video loop autoPlay>
+                  <source src={item} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              )}
+            </FadeIn>
+          </LazyLoad>
+        </div>
+      );
+    });
+  };
+
+  const renderListCarouselAds = () => {
+    return IMG_SLIDE_ADS.map((item, index) => {
       return (
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
@@ -46,6 +86,91 @@ function Home() {
         </Carousel>
         <div className="home__wrapper--icon right">
           <RightCircleOutlined onClick={onNext} />
+        </div>
+      </div>
+      <div className="home__container">
+        <BaMien />
+        <div className="home__wrapper carousel-ads">
+          <div className="home__wrapper--icon left">
+            <LeftOutlined onClick={onPreviousAds} />
+          </div>
+          <Carousel draggable ref={node => (slideAds = node)} dotPosition={dot}>
+            {renderListCarouselAds()}
+          </Carousel>
+          <div className="home__wrapper--icon right">
+            <RightOutlined onClick={onNextAds} />
+          </div>
+        </div>
+        <div className="home__row">
+          <h1 className="home__row--title">DỊCH VỤ PHỔ BIẾN</h1>
+          <Row>
+            <Col span={6}>
+              <div className="home__row--col-content">
+                <CardContent className="card--content" img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <Col span={6}>
+              <div className="home__row--col-content">
+                <CardContent img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <Col span={6}>
+              <div className="home__row--col-content">
+                <CardContent img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <Col span={6}>
+              <div className="home__row--col-content">
+                <CardContent img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <div className="button">
+              <Button className="primary no-bg">Xem thêm</Button>
+            </div>
+          </Row>
+        </div>
+        <div className="home__row">
+          <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
+          <Row>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+            <Col span={4}>
+              <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
+            </Col>
+          </Row>
+        </div>
+        <div className="home__row">
+          <h1 className="home__row--title">ĐIỂM TIN DU LỊCH</h1>
+          <Row>
+            <Col span={8}>
+              <div className="home__row--col-content">
+                <CardContent className="card--content" img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <Col span={8}>
+              <div className="home__row--col-content">
+                <CardContent img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+            <Col span={8}>
+              <div className="home__row--col-content">
+                <CardContent img={IMG_MIEN_BAC} />
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>

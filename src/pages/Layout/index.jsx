@@ -17,9 +17,9 @@ function App({ component: Mycomponent, classes, name, ...remainProps }) {
 
   const handleScroll = event => {
     let scrollTop = Math.round(event.target.scrollingElement.scrollTop);
-    if (scrollTop > 100 && headerRef) {
+    if (scrollTop > 64 && headerRef) {
       showTopHeader(headerRef);
-    } else if (scrollTop < 100 && headerRef) {
+    } else if (scrollTop < 64 && headerRef) {
       showBodyHeader(headerRef);
     }
   };
