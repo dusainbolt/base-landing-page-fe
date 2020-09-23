@@ -16,4 +16,8 @@ button.ant-btn {
     border-color: $primary-color-bold;
     color: $primary-color-bold;
   }
+  &.btn-primary{
+    background-color: $primary-color-bold;
+    color: white;
+  }
 }
