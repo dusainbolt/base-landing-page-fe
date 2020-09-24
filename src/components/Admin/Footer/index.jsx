@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Col, Layout, Row } from "antd";
+import { Button, Col, Layout, Row, Tooltip } from "antd";
 import { PhoneFilled, MailFilled, EnvironmentFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import Search from "antd/lib/input/Search";
@@ -12,9 +12,9 @@ export default function commonFooter() {
     <Footer className="footer" style={{ textAlign: "center" }}>
       <div className="footer__top">
         <div className="footer__top--icon">
-          <EnvironmentFilled className="icon-item" />
-          <PhoneFilled className="icon-item" />
-          <MailFilled className="icon-item" />
+          <Tooltip color="white" title="Đại chỉ: 29D Phạm Văn Bạch, Cầu Giấy, Hà Nội"><EnvironmentFilled className="icon-item" /></Tooltip>
+          <Tooltip color="white" title="0123456789"><PhoneFilled className="icon-item" /></Tooltip>
+          <Tooltip color="white" title="stravel@gmail.com"><MailFilled className="icon-item" /></Tooltip>
         </div>
         <div className="footer__top--right">
           <div className="footer__top--text">

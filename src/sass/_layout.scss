@@ -78,3 +78,9 @@ a {
 .page-bottom{
   margin-bottom: 50px;
 }
+.ant-tooltip-content{
+  .ant-tooltip-inner{
+    color: $black-color !important;
+    font-weight: bold;
+  }
+}

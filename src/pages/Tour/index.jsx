@@ -2,7 +2,7 @@ import { Button, Carousel, Col, Row } from "antd";
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
-import { DICH_VU, IMG_SLIDE_TOP, MIEN_LQ } from "../../common/configLandingPage";
+import { DICH_VU, IMG_SLIDE_TOP, MIEN_LQ, TOUR_BAN_CHAY, ĐD_LQ } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
 import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_2.jpg";
 import CardContent from "../../components/CardContent";
@@ -50,37 +50,9 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <Row>
-              <Col span={8}>
-                <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-              </Col>
-              <Col span={8}>
-                <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-              </Col>
-              <Col span={8}>
-                <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-              </Col>
-            </Row>
-          </div>
-        </FadeIn>
-      </LazyLoad>
-      <LazyLoad height={800} throttle={400}>
-        <FadeIn delay={100} transitionDuration={500}>
-          <div className="home__row">
-            <h1 className="home__row--title">KHÁM PHÁ THÀNH PHỐ</h1>
-            <div className="home__wrapper--icon left">
-              <LeftOutlined onClick={onPrevious} />
-            </div>
-            <Carousel draggable ref={node => (slide = node)} dotPosition={"bottom"}>
-              <div>
-                <Row>{renderContentDV(DICH_VU, 6)}</Row>
-              </div>
-              <div>
-                <Row>{renderContentDV(DICH_VU, 6)}</Row>
-              </div>
-            </Carousel>
-            <div className="home__wrapper--icon right">
-              <RightOutlined onClick={onNext} />
+            <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
+            <div>
+              <Row>{renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
             </div>
           </div>
         </FadeIn>
@@ -88,7 +60,7 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <CardTwoNgang
-            title="BÀI VIẾT"
+            title="Bài Viết"
             img_1={IMG_NGANG_1}
             img_2={IMG_NGANG_2}
             titleContent_1="Phú Quốc có gì chơi?"
@@ -107,10 +79,31 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <h1 className="home__row--title">CÁC ĐỊA ĐIỂM LIÊN QUAN</h1>
+            <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
             <div>
-              <Row>{renderContentDV(MIEN_LQ, 8)}</Row>
+              <Row>{renderContentDV(ĐD_LQ, 8)}</Row>
             </div>
+          </div>
+        </FadeIn>
+      </LazyLoad>
+      <LazyLoad height={800} throttle={400}>
+        <FadeIn delay={100} transitionDuration={500}>
+          <div className="home__row">
+          <h1 className="home__row--title">DỊCH VỤ KHÁC</h1>
+            <Row>
+              <Col span={6}>
+                <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
+              </Col>
+              <Col span={6}>
+                <CardAddress className="address-4"  title="Phú Quốc" img={IMG_ADDRESS} />
+              </Col>
+              <Col span={6}>
+                <CardAddress  className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
+              </Col>
+              <Col span={6}>
+                <CardAddress className="address-4"  title="Phú Quốc" img={IMG_ADDRESS} />
+              </Col>
+            </Row>
           </div>
         </FadeIn>
       </LazyLoad>

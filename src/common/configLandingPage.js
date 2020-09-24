@@ -7,11 +7,20 @@ import IMG_DV_2 from "./image/DichVuPhoBien/dich_vu_2.jpg";
 import IMG_DV_3 from "./image/DichVuPhoBien/dich_vu_3.jpg";
 import IMG_DV_4 from "./image/DichVuPhoBien/dich_vu_4.jpg";
 
+import IMG_DV_NB_1 from "./image/DichVuNoiBat/1.jpg";
+import IMG_DV_NB_2 from "./image/DichVuNoiBat/2.jpg";
+import IMG_DV_NB_3 from "./image/DichVuNoiBat/3.jpg";
+import IMG_DV_NB_4 from "./image/DichVuNoiBat/4.jpg";
+import IMG_DV_NB_5 from "./image/DichVuNoiBat/5.jpg";
+import IMG_DV_NB_6 from "./image/DichVuNoiBat/6.jpg";
+import IMG_DV_NB_7 from "./image/DichVuNoiBat/7.jpg";
+import IMG_DV_NB_8 from "./image/DichVuNoiBat/8.jpg";
+
 
 export const MenuTop = [
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Help",
+    link: "/help",
   },
   {
     name: "Tour",
@@ -71,7 +80,7 @@ export const CONTENT_ABOUT = {
 
 export const DICH_VU = [
   {
-    img: IMG_DV_1,
+    img: IMG_DV_NB_3,
     title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
     description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
     price: 998000,
@@ -80,7 +89,7 @@ export const DICH_VU = [
     order: 80,
   },
   {
-    img: IMG_DV_2,
+    img: IMG_DV_NB_7,
     title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
     description: "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
     price: 933000,
@@ -89,7 +98,7 @@ export const DICH_VU = [
     order: 120,
   },
   {
-    img: IMG_DV_3,
+    img: IMG_DV_NB_5,
     title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
     description: "Khách sạn 4 trọn tour",
     price: 821000,
@@ -98,7 +107,7 @@ export const DICH_VU = [
     order: 25,
   },
   {
-    img: IMG_DV_4,
+    img: IMG_DV_NB_6,
     title: "Miền Tây - Tiền Giang - Cần Thơ - Sóc Trăng - Bạc Liêu - Cà Mau - Đất Mũi",
     description: "Khách sạn tương đương 3*& 4* - Việt Nam Dưới Cánh Chim Bay",
     price: 795000,
@@ -106,6 +115,75 @@ export const DICH_VU = [
     comment: 3223,
     order: 50,
   }
+];
+
+export const TOUR_BAN_CHAY = [
+  {
+    img: IMG_DV_NB_1,
+    title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_DV_NB_2,
+    title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
+    description: "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
+    price: 933000,
+    rate: 5,
+    comment: 11121,
+    order: 120,
+  },
+  {
+    img: IMG_DV_NB_3,
+    title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
+    description: "Khách sạn 4 trọn tour",
+    price: 821000,
+    rate: 4.5,
+    comment: 500,
+    order: 25,
+  },
+  {
+    img: IMG_DV_NB_4,
+    title: "Miền Tây - Tiền Giang - Cần Thơ - Sóc Trăng - Bạc Liêu - Cà Mau - Đất Mũi",
+    description: "Khách sạn tương đương 3*& 4* - Việt Nam Dưới Cánh Chim Bay",
+    price: 795000,
+    rate: 4.5,
+    comment: 3223,
+    order: 50,
+  }
+];
+
+export const ĐD_LQ = [
+  {
+    img: IMG_DV_NB_5,
+    title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_DV_NB_6,
+    title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
+    description: "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
+    price: 933000,
+    rate: 5,
+    comment: 11121,
+    order: 120,
+  },
+  {
+    img: IMG_DV_NB_8,
+    title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
+    description: "Khách sạn 4 trọn tour",
+    price: 821000,
+    rate: 4.5,
+    comment: 500,
+    order: 25,
+  },
 ];
 
 export const MIEN_LQ = [
