@@ -8,9 +8,9 @@ import { useRef } from "react";
 
 const { Header, Content } = Layout;
 function App({ component: Mycomponent, classes, name, ...remainProps }) {
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.scrollTo(0, 0);
   }, []);
 
   const handleScroll = event => {

@@ -80,3 +80,26 @@ export function genderTimeCount(timeNumber) {
     return moment.unix(timeNumber).format(DATE_UTC_FORMAT);
   }
 }
+
+export function formatCommaNumber(num, fix) {
+  if (!num) return 0;
+  let p = num.toFixed(fix).split(".");
+  const fixValue = fix ? "." + p[1] : "";
+  return (
+    p[0]
+      .split("")
+      .reverse()
+      .reduce(function (acc, num, i, orig) {
+        return num === "-" ? acc : num + (i && !(i % 3) ? "," : "") + acc;
+      }, "") + fixValue
+  );
+}
+
+export function convertSalePrice(sale) {
+  if(!sale) return 0;
+  return formatCommaNumber(Math.round(sale * 70 / 100));
+}
+
+export const onRedirect = path => {
+  browserHistory.push(path);
+};

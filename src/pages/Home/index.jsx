@@ -3,6 +3,8 @@ import FadeIn from "react-fade-in";
 import { actions } from "./actions";
 import BackTop from "../../components/BackTop";
 import CardContent from "../../components/CardContent";
+import CardBaiViet from "../../components/CardBaiViet";
+
 import { Button, Carousel, Col, Row } from "antd";
 import LazyLoad from "react-lazyload";
 import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_1.jpg";
@@ -13,9 +15,11 @@ import {
   RightOutlined,
   LeftOutlined,
 } from "@ant-design/icons";
-import { IMG_SLIDE_TOP, IMG_SLIDE_ADS } from "../../common/configLandingPage";
+import { IMG_SLIDE_TOP, IMG_SLIDE_ADS, DICH_VU } from "../../common/configLandingPage";
 import BaMien from "./HomeComponent/BaMien";
 import CardAddress from "../../components/Dot";
+import { browserHistory } from "../../utils/history";
+import { onRedirect } from "../../utils";
 
 function Home() {
   const dot = {
@@ -46,13 +50,14 @@ function Home() {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              {index !== IMG_SLIDE_TOP.length - 1 ? <img src={item} /> :
-
+              {index !== IMG_SLIDE_TOP.length - 1 ? (
+                <img src={item} />
+              ) : (
                 <video loop autoPlay>
                   <source src={item} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              }
+              )}
             </FadeIn>
           </LazyLoad>
         </div>
@@ -70,6 +75,26 @@ function Home() {
             </FadeIn>
           </LazyLoad>
         </div>
+      );
+    });
+  };
+
+  const renderContentDV = () => {
+    return DICH_VU.map((item, index) => {
+      return (
+        <Col key={index} span={6}>
+          <div className="home__row--col-content card-content">
+            <CardContent
+              title={item.title}
+              price={item.price}
+              sale={item.sale}
+              rate={item.rate}
+              comment={item.comment}
+              order={item.order}
+              img={item.img}
+            />
+          </div>
+        </Col>
       );
     });
   };
@@ -109,28 +134,9 @@ function Home() {
             <div className="home__row">
               <h1 className="home__row--title">DỊCH VỤ PHỔ BIẾN</h1>
               <Row>
-                <Col span={6}>
-                  <div className="home__row--col-content">
-                    <CardContent className="card--content" img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-                <Col span={6}>
-                  <div className="home__row--col-content">
-                    <CardContent img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-                <Col span={6}>
-                  <div className="home__row--col-content">
-                    <CardContent img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-                <Col span={6}>
-                  <div className="home__row--col-content">
-                    <CardContent img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
+                {renderContentDV()}
                 <div className="button">
-                  <Button className="primary no-bg">Xem thêm</Button>
+                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
                 </div>
               </Row>
             </div>
@@ -170,17 +176,17 @@ function Home() {
               <Row>
                 <Col span={8}>
                   <div className="home__row--col-content">
-                    <CardContent className="card--content" img={IMG_MIEN_BAC} />
+                    <CardBaiViet className="card--content" img={IMG_MIEN_BAC} />
                   </div>
                 </Col>
                 <Col span={8}>
                   <div className="home__row--col-content">
-                    <CardContent img={IMG_MIEN_BAC} />
+                    <CardBaiViet img={IMG_MIEN_BAC} />
                   </div>
                 </Col>
                 <Col span={8}>
                   <div className="home__row--col-content">
-                    <CardContent img={IMG_MIEN_BAC} />
+                    <CardBaiViet img={IMG_MIEN_BAC} />
                   </div>
                 </Col>
               </Row>

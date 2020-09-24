@@ -2,6 +2,10 @@ import IMG_TOP_1 from "./image/slideTop/IMG_TOP_1.jpg";
 import IMG_TOP_2 from "./image/slideTop/IMG_TOP_2.jpg";
 import IMG_TOP_3 from "./image/slideTop/IMG_TOP_4.jpg";
 import IMG_TOP_4 from "./image/slideTop/videoTop.mov";
+import IMG_DV_1 from "./image/DichVuPhoBien/dich_vu_1.jpg";
+import IMG_DV_2 from "./image/DichVuPhoBien/dich_vu_2.jpg";
+import IMG_DV_3 from "./image/DichVuPhoBien/dich_vu_3.jpg";
+import IMG_DV_4 from "./image/DichVuPhoBien/dich_vu_4.jpg";
 
 
 export const MenuTop = [
@@ -29,6 +33,8 @@ export const MenuTop = [
 ];
 
 export const IMG_SLIDE_TOP = [IMG_TOP_1, IMG_TOP_2, IMG_TOP_3,  IMG_TOP_4];
+export const IMG_SIDE_ABOUT = [IMG_TOP_1];
+export const IMG_SLIDE_MIEN = [IMG_TOP_3];
 
 export const CONTENT_TRAVEL = {
   MIEN_BAC: [
@@ -45,22 +51,92 @@ export const CONTENT_TRAVEL = {
 
 export const CONTENT_ABOUT = {
   ABOUT_US: [
-    "STRAVEL đem đến cho bạn giải pháp thật đơn giản để khám phá các điểm tham quan và hoạt động du lịch",
-    "Khám phá và đặt dịch vụ tại điểm đến với giá tốt nhất. Với vài cú nhấp chuột, bạn có thể bắt tàu cao tốc Hongkong Airport Express , để gia đình vui chơi thoải thích tại Tokyo Disneyland hoặc sững sờ trước thế giới tuyệt đẹp của sóng biển Bali.",
+    "Từ 2010 , chúng tôi không ngừng nỗ lực thay đổi để đem đến cho khách hàng những trải nghiệm tốt nhất.",
+    "Stravel sẽ đưa bạn chạm tới mọi vẻ đẹp của Việt Nam, từ những ngọn núi, thung lũng ngoạn mục của miền Bắc tới những bãi biển dài đầy cát trắng của Đà Nẵng và những con phố nhộn nhịp, sầm uất của Thành Phố Hồ Chí Minh.",
   ],
   TAM_NHIN: [
-    "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
-    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
-  ],
-  SU_MENH: [
-    "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
-    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
+    "Truyền tải vẻ đẹp của các danh lam thắng cảnh, nét văn hóa độc đáo cùng với những trải nghiệm tuyệt vời.",
+    "Kết nối, dẫn dắt đem đến cho du khách trải nghiệm thú vị trong từng hành trình đến với những miền đất Việt Nam tươi đẹp"
   ],
   CAM_KET: [
+    "TLà nhà tư vấn đáng tin cậy nhất cho việc lập kế hoạch tham quan, dự kiến chi phí cho mỗi chương trình.",
+    "Giá cả hợp lý với chất lượng dịch vụ là ưu tiên hàng đầu",
+    "Lịch trình tham quan rõ ràng, đảm bảo tối đa lợi ích, hạn chế tối thiểu rủi ro và bất lợi cho du khách"
+  ],
+  NHA_DAU_TU: [
     "Tận hưởng những ngày nghỉ tuyệt vời chưa bao giờ đơn giản đến như vậy",
-    "Du lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị."
+    "Stravel tự hào khi được hỗ trợ bởi các công ty đầu tư lớn trên toàn quốc."
   ]
 }
+
+export const DICH_VU = [
+  {
+    img: IMG_DV_1,
+    title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_DV_2,
+    title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
+    description: "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
+    price: 933000,
+    rate: 5,
+    comment: 11121,
+    order: 120,
+  },
+  {
+    img: IMG_DV_3,
+    title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
+    description: "Khách sạn 4 trọn tour",
+    price: 821000,
+    rate: 4.5,
+    comment: 500,
+    order: 25,
+  },
+  {
+    img: IMG_DV_4,
+    title: "Miền Tây - Tiền Giang - Cần Thơ - Sóc Trăng - Bạc Liêu - Cà Mau - Đất Mũi",
+    description: "Khách sạn tương đương 3*& 4* - Việt Nam Dưới Cánh Chim Bay",
+    price: 795000,
+    rate: 4.5,
+    comment: 3223,
+    order: 50,
+  }
+];
+
+export const MIEN_LQ = [
+  {
+    img: IMG_DV_1,
+    title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_DV_2,
+    title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
+    description: "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
+    price: 933000,
+    rate: 5,
+    comment: 11121,
+    order: 120,
+  },
+  {
+    img: IMG_DV_3,
+    title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
+    description: "Khách sạn 4 trọn tour",
+    price: 821000,
+    rate: 4.5,
+    comment: 500,
+    order: 25,
+  },
+];
 
 export const IMG_SLIDE_ADS = [IMG_TOP_2, IMG_TOP_3];
 

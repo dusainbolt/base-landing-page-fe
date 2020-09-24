@@ -1,54 +1,82 @@
 .about {
-    &__row{
-        &--content{
-            padding: 72px 0;
-            width: 800px;
-            margin: 0 auto;
-            text-align: center;
-             &__title{
-                font-size: 36px;
-                text-align: center;
-                color: $primary-color-bold;
-                margin-bottom: 50px;
-            }
-            >p{
-                font-size: 18px;
-            }
-            &__bottom{
-                margin-top: 50px;
-            }
-        }
-        &.bg{
-            background-color: white;
-        }
-    }
-    .image-demo{
-        width: 100px;
-        height: 100px;
-        background-color: #ababab;
-        margin: auto;
-    }
-    .ant-carousel {
-        border-radius: 8px;
-        overflow: hidden;
-        .slick-dots {
-          top: 370px;
-        }
+  &__row {
+    &--content {
+      padding: 72px 0;
+      width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      &__title {
+        font-size: 36px;
+        text-align: center;
+        color: $primary-color-bold;
+        margin-bottom: 50px;
       }
-      .home__wrapper--icon {
-        top: 50%;
-        left: -45px;
-        background: white;
-        padding: 10px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        .anticon {
-          font-size: 20px;
-        }
-        &.right {
-          right: -45px;
-          left: unset;
-        }
+      > p {
+        font-size: 18px;
       }
+      &__bottom {
+        margin-top: 50px;
+      }
+    }
+    &.bg {
+      background-color: white;
+    }
+  }
+  .image-demo {
+    width: 100px;
+    height: 100px;
+    background-color: #ababab;
+    margin: auto;
+  }
+  .ant-carousel {
+    border-radius: 8px;
+    overflow: hidden;
+    // .slick-dots {
+    //   top: 370px;
+    // }
+  }
+  .home__wrapper--icon {
+    top: 50%;
+    left: -45px;
+    background: white;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    .anticon {
+      font-size: 20px;
+    }
+    &.right {
+      right: -45px;
+      left: unset;
+    }
+  }
+  .ant-tabs-nav-wrap{
+      justify-content: center;
+      background-color: white;
+      height: 59px;
+      .ant-tabs-tab{
+          margin: 0;
+          min-width: 160px;
+          text-align: center;
+          justify-content: center;
+
+      }  
+      .ant-tabs-tab-btn{
+          color: $black-color;
+          font-size: 16px;
+      }
+      .ant-tabs-tab-active{
+        color: $primary-color-bold;
+          border-bottom-color: $primary-color-bold;
+          .ant-tabs-tab-btn{
+            font-weight: bold;
+            color: $primary-color-bold;
+          }
+
+      }
+      .ant-tabs-ink-bar{
+          background: $primary-color-bold;
+      }
+  }
 }

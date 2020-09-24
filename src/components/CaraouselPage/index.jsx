@@ -5,7 +5,7 @@ import LazyLoad from "react-lazyload";
 import { IMG_SLIDE_TOP } from "../../common/configLandingPage";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 
-function CarouselPage({ listImage, className }) {
+function  CarouselPage({ listImage, className, type = "img" }) {
   let slide = useRef(null);
 
   const renderListCarousel = () => {
@@ -14,7 +14,7 @@ function CarouselPage({ listImage, className }) {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              {index !== IMG_SLIDE_TOP.length - 1 ? (
+              {index !== IMG_SLIDE_TOP.length - 1 || type === "img" ? (
                 <img src={item} />
               ) : (
                 <video loop autoPlay>

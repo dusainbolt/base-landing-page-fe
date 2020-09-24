@@ -6,6 +6,7 @@ import IMG_MIEN_NAM from "../../../common/image/image3Mien/IMG_7706.PNG";
 import { Button, Col, Row } from "antd";
 import LazyLoad from "react-lazyload";
 import { CONTENT_TRAVEL } from "../../../common/configLandingPage";
+import { onRedirect } from "../../../utils";
 
 function BaMien() {
   return (
@@ -26,7 +27,7 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_BAC[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_BAC[2]}</p>
                   <div className="button">
-                    <Button className="primary no-bg">Xem thêm</Button>
+                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
                   </div>
                 </div>
               </div>
@@ -50,7 +51,7 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_TRUG[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_TRUG[2]}</p>
                   <div className="button">
-                    <Button className="primary no-bg">Xem thêm</Button>
+                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
                   </div>
                 </div>
               </div>
@@ -75,7 +76,7 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_BAC[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_BAC[2]}</p>
                   <div className="button">
-                    <Button className="primary no-bg">Xem thêm</Button>
+                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
                   </div>{" "}
                 </div>
               </div>
