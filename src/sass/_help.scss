@@ -67,4 +67,41 @@
       font-size: 12px;
     }
   }
+  &__icon-menu {
+    width: 36px;
+    height: 36px;
+  }
+  .ant-menu-light{
+    margin-top: 35px;
+  }
+  .ant-breadcrumb{
+    float: left;
+    span{
+      font-size: $base-font-size;
+    }
+  }
+  .ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .ant-menu-item{
+    span{
+      margin-left: 5px;
+      font-size: $base-font-size;
+      font-weight: bold;
+    }
+
+  }
+  .ant-collapse{
+    text-align: left;
+    .ant-collapse-item{
+      .ant-collapse-header{
+        font-size: 16px;
+      }
+      &:hover{
+        .ant-collapse-header{
+          color: $primary-color-bold;
+        }
+      }
+    }
+  }
 }

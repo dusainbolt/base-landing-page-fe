@@ -15,7 +15,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
   const renderMenuTop = () => {
     return MenuTop.map((item, index) => {
       return (
-        <li className={index === MenuTop.length - 1 && "active"} key={index}>
+        <li className={index === MenuTop.length - 1 && "0"} key={index}>
           <Link to={item.link}>{item.name}</Link>
         </li>
       );
