@@ -4,10 +4,9 @@ import { Router, Switch, Route } from "react-router-dom";
 import { browserHistory } from "./utils/history";
 import LayoutWeb from "./pages/Layout";
 import { WebRoutes } from "./Routes";
-import NotFound from "./pages/NotFound";
+import Help from "./pages/Help";
 import "./App.css";
 import "./sass/app.scss";
-import { connect } from "react-redux";
 class App extends Component {
 
   renderWebLayout = () => {
@@ -32,7 +31,7 @@ class App extends Component {
         <Router history={browserHistory}>
           <Switch>
             {this.renderWebLayout()}
-            <Route exact path="" component={NotFound} />
+            <Route exact path="" component={Help} />
           </Switch>
         </Router>
       </div>

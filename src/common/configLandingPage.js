@@ -22,6 +22,11 @@ import IMG_SLIDE_PAGE_3 from "./image/SlidePage/3.jpg";
 import IMG_SLIDE_PAGE_4 from "./image/SlidePage/4.jpg";
 import IMG_SLIDE_PAGE_5 from "./image/SlidePage/5.jpg";
 
+import HELP_ICON_CARD from "./image/HelpIcon/card.svg";
+import HELP_ICON_LICH from "./image/HelpIcon/lich.svg";
+import HELP_ICON_SETTING from "./image/HelpIcon/setting.svg";
+import HELP_ICON_MONEY from "./image/HelpIcon/money.svg";
+
 export const MenuTop = [
   {
     name: "Help",
@@ -33,7 +38,7 @@ export const MenuTop = [
   },
   {
     name: "Blog",
-    link: "/blog",
+    link: "/help",
   },
   {
     name: "About",
@@ -49,6 +54,7 @@ export const MenuTop = [
 export const IMG_SLIDE_TOP = [IMG_TOP_1, IMG_TOP_2, IMG_TOP_3,  IMG_TOP_4];
 export const IMG_SIDE_ABOUT = [IMG_SLIDE_PAGE_1, IMG_SLIDE_PAGE_2, IMG_SLIDE_PAGE_3, IMG_SLIDE_PAGE_4, IMG_SLIDE_PAGE_5];
 export const IMG_SLIDE_MIEN = [IMG_TOP_3];
+export const IMG_SLIDE_ADS = [IMG_TOP_2, IMG_TOP_3];
 
 export const CONTENT_TRAVEL = {
   MIEN_BAC: [
@@ -221,5 +227,25 @@ export const MIEN_LQ = [
   },
 ];
 
-export const IMG_SLIDE_ADS = [IMG_TOP_2, IMG_TOP_3];
-
+export const HELP_CONTENT = [
+  {
+    title: "Quy trình đặt dịch vụ",
+    description: "Cách đặt, xác nhận tức thời, xem voucher",
+    img: HELP_ICON_LICH,
+  },
+  {
+    title: "Quy trình Thanh toán",
+    description: "Cách thanh toán, truy vấn tiền tệ, bảo mật thanh toán",
+    img: HELP_ICON_CARD,
+  },
+  {
+    title: "Hoàn & Hủy",
+    description: "Làm sao để nhận hoàn tiền, thay đổi đơn hàng ",
+    img: HELP_ICON_MONEY,
+  },
+  {
+    title: "Cài đặt Tài Khoản",
+    description: "Cách tạo tài khoản, passwords, và cập nhật thông tin ",
+    img: HELP_ICON_SETTING,
+  }
+];
