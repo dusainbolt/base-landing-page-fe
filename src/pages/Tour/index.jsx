@@ -2,27 +2,21 @@ import { Button, Carousel, Col, Row } from "antd";
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
-import { DICH_VU, IMG_SLIDE_TOP, MIEN_LQ, TOUR_BAN_CHAY, ĐD_LQ } from "../../common/configLandingPage";
+import {
+  IMG_SLIDE_TOP,
+  TOUR_BAN_CHAY,
+  ĐD_LQ,
+} from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
-import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_2.jpg";
 import CardContent from "../../components/CardContent";
 import CardTwoNgang from "../../components/CardTwoNgang";
 import CardAddress from "../../components/Dot";
 import IMG_NGANG_1 from "../../common/image/DichVuPhoBien/dich_vu_1.jpg";
 import IMG_NGANG_2 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
 import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
-import { RightOutlined, LeftOutlined } from "@ant-design/icons";
 
 function About() {
   let slide = useRef(null);
-
-  const onPrevious = () => {
-    slide.prev();
-  };
-
-  const onNext = () => {
-    slide.next();
-  };
 
   const renderContentDV = (listContent, col) => {
     return listContent.map((item, index) => {
@@ -89,19 +83,19 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-          <h1 className="home__row--title">DỊCH VỤ KHÁC</h1>
+            <h1 className="home__row--title">DỊCH VỤ KHÁC</h1>
             <Row>
               <Col span={6}>
                 <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>
               <Col span={6}>
-                <CardAddress className="address-4"  title="Phú Quốc" img={IMG_ADDRESS} />
+                <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>
               <Col span={6}>
-                <CardAddress  className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
+                <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>
               <Col span={6}>
-                <CardAddress className="address-4"  title="Phú Quốc" img={IMG_ADDRESS} />
+                <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>
             </Row>
           </div>

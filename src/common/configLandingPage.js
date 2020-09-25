@@ -16,6 +16,11 @@ import IMG_DV_NB_6 from "./image/DichVuNoiBat/6.jpg";
 import IMG_DV_NB_7 from "./image/DichVuNoiBat/7.jpg";
 import IMG_DV_NB_8 from "./image/DichVuNoiBat/8.jpg";
 
+import IMG_SLIDE_PAGE_1 from "./image/SlidePage/1.jpg";
+import IMG_SLIDE_PAGE_2 from "./image/SlidePage/2.jpg";
+import IMG_SLIDE_PAGE_3 from "./image/SlidePage/3.jpg";
+import IMG_SLIDE_PAGE_4 from "./image/SlidePage/4.jpg";
+import IMG_SLIDE_PAGE_5 from "./image/SlidePage/5.jpg";
 
 export const MenuTop = [
   {
@@ -42,7 +47,7 @@ export const MenuTop = [
 ];
 
 export const IMG_SLIDE_TOP = [IMG_TOP_1, IMG_TOP_2, IMG_TOP_3,  IMG_TOP_4];
-export const IMG_SIDE_ABOUT = [IMG_TOP_1];
+export const IMG_SIDE_ABOUT = [IMG_SLIDE_PAGE_1, IMG_SLIDE_PAGE_2, IMG_SLIDE_PAGE_3, IMG_SLIDE_PAGE_4, IMG_SLIDE_PAGE_5];
 export const IMG_SLIDE_MIEN = [IMG_TOP_3];
 
 export const CONTENT_TRAVEL = {

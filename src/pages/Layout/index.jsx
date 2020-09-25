@@ -8,18 +8,29 @@ import { useRef } from "react";
 
 const { Header, Content } = Layout;
 function App({ component: Mycomponent, classes, name, ...remainProps }) {
+
+  const path = window.location.pathname;
+
   useEffect(() => {
+    const headerRef = document.getElementById("headerWeb");
     window.addEventListener("scroll", handleScroll);
     window.scrollTo(0, 0);
+    if(path !== "/" && headerRef && headerRef?.style){
+      showTopHeader(headerRef);
+    }
   }, []);
 
   const handleScroll = event => {
     const headerRef = document.getElementById("headerWeb");
-    let scrollTop = Math.round(event.target.scrollingElement.scrollTop);
-    if (scrollTop > 64 && headerRef) {
+    if(path === "/" && headerRef && headerRef?.style){
+      let scrollTop = Math.round(event.target.scrollingElement.scrollTop);
+      if (scrollTop > 64) {
+        showTopHeader(headerRef);
+      } else if (scrollTop < 64) {
+        showBodyHeader(headerRef);
+      }
+    }else{
       showTopHeader(headerRef);
-    } else if (scrollTop < 64 && headerRef) {
-      showBodyHeader(headerRef);
     }
   };
   return (

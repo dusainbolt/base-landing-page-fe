@@ -36,7 +36,6 @@ function  CarouselPage({ listImage, className, type = "img" }) {
   const onNext = () => {
     slide.next();
   };
-
   return (
     <div className={`home__wrapper ${className}`}>
       <div className="home__wrapper--icon left">

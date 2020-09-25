@@ -66,7 +66,7 @@ function About() {
       </LazyLoad>
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
-          <div className="home__row">
+          <div className="home__row carousel-card">
             <h1 className="home__row--title">KHÁM PHÁ THÀNH PHỐ</h1>
             <div className="home__wrapper--icon left">
               <LeftOutlined onClick={onPrevious} />

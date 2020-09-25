@@ -2,6 +2,7 @@ import HomeWeb from "./pages/Home";
 import About from "./pages/About";
 import Mien from "./pages/Mien";
 import Tour from "./pages/Tour";
+import Help from "./pages/Help";
 
 export const WebRoutes = [
   {
@@ -26,6 +27,12 @@ export const WebRoutes = [
     name: "Tour",
     path: "/tour",
     component: Tour,
+    exact: true,
+  },
+  {
+    name: "Help",
+    path: "/help",
+    component: Help,
     exact: true,
   }
 ];

@@ -84,3 +84,18 @@ a {
     font-weight: bold;
   }
 }
+.ant-layout-content{
+  .home__carousel-page{
+    .home__wrapper--icon{
+      padding: 0;
+      background: unset;
+      left: 15px;
+      >span{
+        font-size: 40px;
+      }
+      &.right{
+        right: 15px;
+      }
+    }
+  }
+}
