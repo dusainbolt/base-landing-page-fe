@@ -1,25 +1,20 @@
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
-import { actions } from "./actions";
-import BackTop from "../../components/BackTop";
 import CardContent from "../../components/CardContent";
-import CardBaiViet from "../../components/CardBaiViet";
+import CardBlogDoc from "../../components/CardBlogDoc";
 
 import { Button, Carousel, Col, Row } from "antd";
 import LazyLoad from "react-lazyload";
-import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_1.jpg";
-import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
 import {
   LeftCircleOutlined,
   RightCircleOutlined,
   RightOutlined,
   LeftOutlined,
 } from "@ant-design/icons";
-import { IMG_SLIDE_TOP, IMG_SLIDE_ADS, DICH_VU } from "../../common/configLandingPage";
+import { IMG_SLIDE_TOP, IMG_SLIDE_ADS, DICH_VU, ADDRESS, LQ_BLOG } from "../../common/configLandingPage";
 import BaMien from "./HomeComponent/BaMien";
 import CardAddress from "../../components/Dot";
-import { browserHistory } from "../../utils/history";
-import { onRedirect } from "../../utils";
+import { getTypeTravel, onRedirect } from "../../utils";
 
 function Home() {
   const dot = {
@@ -99,6 +94,30 @@ function Home() {
     });
   };
 
+  const renderContentAddress = () => {
+    return ADDRESS.map(item => (
+      <Col key={item.title} span={4}>
+        <CardAddress title={item.title} img={item.img} />
+      </Col>
+    ));
+  };
+
+  const renderNoiBatBlog = () => {
+    return LQ_BLOG.map((item, index) => (
+      <Col key={index} span={8}>
+        <div className="home__row--col-content">
+          <CardBlogDoc
+            title={item.title}
+            description={item.description}
+            type={getTypeTravel(item.type)}
+            className="card--content"
+            img={item.img}
+          />
+        </div>
+      </Col>
+    ));
+  };
+
   return (
     <div className="home">
       <div className="home__wrapper">
@@ -136,7 +155,9 @@ function Home() {
               <Row gutter={[16, 16]}>
                 {renderContentDV()}
                 <div className="button">
-                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
+                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">
+                    Xem thêm
+                  </Button>
                 </div>
               </Row>
             </div>
@@ -147,24 +168,7 @@ function Home() {
             <div className="home__row">
               <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
               <Row gutter={[16, 16]}>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
-                <Col span={4}>
-                  <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
-                </Col>
+                {renderContentAddress()}
               </Row>
             </div>
           </FadeIn>
@@ -173,23 +177,7 @@ function Home() {
           <FadeIn delay={100} transitionDuration={500}>
             <div className="home__row">
               <h1 className="home__row--title">ĐIỂM TIN DU LỊCH</h1>
-              <Row gutter={[16, 16]}>
-                <Col span={8}>
-                  <div className="home__row--col-content">
-                    <CardBaiViet className="card--content" img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-                <Col span={8}>
-                  <div className="home__row--col-content">
-                    <CardBaiViet img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-                <Col span={8}>
-                  <div className="home__row--col-content">
-                    <CardBaiViet img={IMG_MIEN_BAC} />
-                  </div>
-                </Col>
-              </Row>
+              <Row gutter={[16, 16]}>{renderNoiBatBlog()}</Row>
             </div>
           </FadeIn>
         </LazyLoad>

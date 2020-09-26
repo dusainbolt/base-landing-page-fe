@@ -49,20 +49,26 @@ export default function commonFooter() {
                 <li className="footer__text left large">Cơ hội nghề nghiệp</li>
               </ul>
             </Col>
+            
             <Col className="footer__bottom--col" span={5}>
               <div className="footer__bottom--title">ĐỐI TÁC</div>
               <ul>
-                <li className="footer__text left large">Về chúng tôi</li>
-                <li className="footer__text left large">STRAVEL Blog</li>
-                <li className="footer__text left large">Cơ hội nghề nghiệp</li>
+                <li className="footer__text left large">Đối tác đăng nhập</li>
+                <li className="footer__text left large">Đối tác liên kết</li>
+                <li className="footer__text left large">Chương trình cho người nổi tiếng</li>
+                <li className="footer__text left large">Chương trình cho Đại lý</li>
+                <li className="footer__text left large">Hợp tác của chúng tôi</li>
+
               </ul>
             </Col>
             <Col className="footer__bottom--col" span={6}>
-              <div className="footer__bottom--title">ĐỐI TÁC</div>
+              <div className="footer__bottom--title">ĐIỀU KHOẢN SỬ DỤNG</div>
               <ul>
-                <li className="footer__text left large">Về chúng tôi</li>
-                <li className="footer__text left large">STRAVEL Blog</li>
-                <li className="footer__text left large">Cơ hội nghề nghiệp</li>
+                <li className="footer__text left large">Điều khoản sử dụng</li>
+                <li className="footer__text left large">Quyền riêng tư</li>
+                <li className="footer__text left large">Chính sách Cookie</li>
+                <li className="footer__text left large">Chương trình thưởng phát hiện lỗi phần mềm</li>
+                <li className="footer__text left large">Chính sách và quy định</li>
               </ul>
             </Col>
             <Col className="footer__bottom--col col-payment" span={5}>

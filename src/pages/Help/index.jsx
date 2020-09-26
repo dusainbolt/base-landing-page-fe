@@ -137,7 +137,7 @@ function Help() {
                 <Col span={24}>
                   <Breadcrumb separator=">">
                     <Breadcrumb.Item>Trợ giúp</Breadcrumb.Item>
-                    <Breadcrumb.Item>{HELP_CONTENT[indexMenu]?.title}</Breadcrumb.Item>
+                    <Breadcrumb.Item>{HELP_CONTENT[indexMenu - 1]?.title}</Breadcrumb.Item>
                     <Breadcrumb.Item>
                       {listHelpContent[indexMenu - 1][indexCollapse - 1]?.title}
                     </Breadcrumb.Item>

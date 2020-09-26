@@ -14,7 +14,7 @@ import CardTwoNgang from "../../components/CardTwoNgang";
 import CardAddress from "../../components/Dot";
 import IMG_NGANG_1 from "../../common/image/DichVuPhoBien/dich_vu_1.jpg";
 import IMG_NGANG_2 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
-import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
+import IMG_ADDRESS from "../../common/image/imageAddress/1.webp";
 
 function About() {
   let slide = useRef(null);
@@ -45,7 +45,7 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
+            <h1 className="home__row--title">Tour bán chạy nhất</h1>
             <div>
             <Row gutter={[16, 16]}>
                 {renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
@@ -75,7 +75,7 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
+            <h1 className="home__row--title">Gợi ý địa điểm</h1>
             <div>
             <Row gutter={[16, 16]}>
                 {renderContentDV(ĐD_LQ, 8)}</Row>
@@ -86,7 +86,7 @@ function About() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <h1 className="home__row--title">DỊCH VỤ KHÁC</h1>
+            <h1 className="home__row--title">Dịch vụ khác</h1>
             <Row gutter={[16, 16]}>
               <Col span={6}>
                 <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />

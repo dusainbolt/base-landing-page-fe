@@ -44,6 +44,40 @@ import BLOG_NB_2 from "./image/BlogLienQuan/2.webp";
 import BLOG_NB_3 from "./image/BlogLienQuan/3.jpg";
 
 
+import ADDRESS_1 from "./image/imageAddress/1.webp";
+import ADDRESS_2 from "./image/imageAddress/2.jpg";
+import ADDRESS_3 from "./image/imageAddress/3.jpg";
+import ADDRESS_4 from "./image/imageAddress/4.jpg";
+import ADDRESS_5 from "./image/imageAddress/5.jpg";
+import ADDRESS_6 from "./image/imageAddress/6.jpg";
+
+export const ADDRESS = [
+  {
+    title: "Phú Quốc",
+    img: ADDRESS_1,
+  },
+  {
+    title: "Sapa",
+    img: ADDRESS_2,
+  },
+  {
+    title: "Đà Lạt",
+    img: ADDRESS_3,
+  },
+  {
+    title: "Nha Trang",
+    img: ADDRESS_4,
+  },
+  {
+    title: "TP Hồ Chí Minh",
+    img: ADDRESS_5,
+  },
+  {
+    title: "Hà Nội",
+    img: ADDRESS_6,
+  },
+];
+
 export const BLOG_POPULAR = [
   {
     title: "Tin Vui Mùa COVID-19: Nhật Bản & Hàn Quốc Nới Lỏng Nhập Cảnh Cho Du Khách Việt Nam",
@@ -330,7 +364,7 @@ export const TOUR_BAN_CHAY = [
 
 export const ĐD_LQ = [
   {
-    img: IMG_DV_NB_5,
+    img: XU_HUONG_3,
     title: "Hạ Long – Khu suối khoáng nóng Yoko Quang Hanh",
     description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
     price: 998000,
@@ -339,7 +373,7 @@ export const ĐD_LQ = [
     order: 80,
   },
   {
-    img: IMG_DV_NB_6,
+    img: XU_HUONG_2,
     title: "Du thuyền vịnh Hạ Long – Lan Hạ : Đảo Tuần Châu – Khu vực Ao Ếch – Hang Sáng, Tối",
     description:
       "Trải nghiệm câu mực đen, chèo thuyền Kayak , chơi golf trên Du thuyền 5 sao Stellar",
@@ -349,7 +383,7 @@ export const ĐD_LQ = [
     order: 120,
   },
   {
-    img: IMG_DV_NB_8,
+    img: XU_HUONG_6,
     title: "Đà Nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - La Vang - Động Phong Nha - Huế",
     description: "Khách sạn 4 trọn tour",
     price: 821000,

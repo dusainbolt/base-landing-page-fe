@@ -10,7 +10,7 @@ import CardTwoNgang from "../../components/CardTwoNgang";
 import CardAddress from "../../components/Dot";
 import IMG_NGANG_1 from "../../common/image/DichVuPhoBien/dich_vu_1.jpg";
 import IMG_NGANG_2 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
-import IMG_ADDRESS from "../../common/image/imageAddress/fdopxuk1tinxvtylpax8.webp";
+import IMG_ADDRESS from "../../common/image/imageAddress/1.webp";
 import { RightOutlined, LeftOutlined } from "@ant-design/icons";
 
 function About() {

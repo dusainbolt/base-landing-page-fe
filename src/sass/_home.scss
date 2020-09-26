@@ -11,7 +11,7 @@
       margin: 120px auto;
       overflow: unset;
       .ant-carousel {
-        border-radius: 8px;
+        border-radius: 5px;
         height: 180px;
         overflow: hidden;
         .slick-dots {
@@ -105,7 +105,7 @@
     &--new{
       width: 1160px;
       height: 300px;
-      border-radius: 8px;
+      border-radius: 5px;
       overflow: hidden;
       color: white;
       cursor: pointer;
@@ -197,12 +197,12 @@
       .ant-card-cover {
         height: 154px;
         overflow: hidden;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
       }
 
       .ant-card {
-        border-radius: 8px;
+        border-radius: 5px;
       }
       .ant-card-meta-title {
         color: $primary-color-bold;
@@ -216,7 +216,7 @@
       margin-bottom: 50px;
       height: 235px;
       overflow: hidden;
-      border-radius: 8px;
+      border-radius: 5px;
       position: relative;
       cursor: pointer;
       &.address-4{
@@ -230,6 +230,7 @@
         >img{
           width: 100%;
           min-height: 235px;
+          filter: blur(1px);
         };
       }
       &__title{
