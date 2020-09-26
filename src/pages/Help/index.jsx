@@ -11,30 +11,16 @@ import {
   HELP_DV,
 } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
-import IMG_DAU_TU_LIST from "../../common/image/dautudulich.png";
-import {
-  RightOutlined,
-  MailOutlined,
-  CalendarOutlined,
-  AppstoreOutlined,
-  SettingOutlined,
-  LinkOutlined,
-} from "@ant-design/icons";
+import { RightOutlined } from "@ant-design/icons";
 import { Menu, Breadcrumb, Collapse } from "antd";
 import { useState } from "react";
 import { useEffect } from "react";
 
 const { Panel } = Collapse;
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
-
 const listHelpContent = [HELP_DV, HELP_PAYMENT, HELP_HOAN_CANCEL, HELP_SETTING];
 
-function About() {
+function Help() {
   const [indexCollapse, setIndexCollapse] = useState(0);
   const [listContentHelp, setListContentHelp] = useState(listHelpContent[0]);
   const [indexMenu, setIndexMenu] = useState(1);
@@ -55,7 +41,7 @@ function About() {
   };
 
   const renderContentHelp = () => {
-    return HELP_CONTENT.map((item, index)=> {
+    return HELP_CONTENT.map((item, index) => {
       return (
         <Col
           key={item.title}
@@ -175,4 +161,4 @@ function About() {
   );
 }
 
-export default About;
+export default Help;

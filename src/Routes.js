@@ -3,12 +3,19 @@ import About from "./pages/About";
 import Mien from "./pages/Mien";
 import Tour from "./pages/Tour";
 import Help from "./pages/Help";
+import Blog from "./pages/Blog";
 
 export const WebRoutes = [
   {
     name: "Home",
     path: "/",
     component: HomeWeb,
+    exact: true,
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+    component: Blog,
     exact: true,
   },
   {

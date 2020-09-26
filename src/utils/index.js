@@ -103,3 +103,7 @@ export function convertSalePrice(sale) {
 export const onRedirect = path => {
   browserHistory.push(path);
 };
+
+export const getTypeTravel = type => {
+  return type === 1 ? "Hoạt động trải nghiệm" : "Ăn uống";
+};

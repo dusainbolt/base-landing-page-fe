@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
 import {
+  IMG_SIDE_ABOUT,
   IMG_SLIDE_TOP,
   TOUR_BAN_CHAY,
   ĐD_LQ,
@@ -40,13 +41,14 @@ function About() {
 
   return (
     <div className="home about">
-      <CarouselPage listImage={IMG_SLIDE_TOP} className="home__carousel-page page-bottom" />
+      <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page page-bottom" />
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
             <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
             <div>
-              <Row>{renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
+            <Row gutter={[16, 16]}>
+                {renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
             </div>
           </div>
         </FadeIn>
@@ -75,7 +77,8 @@ function About() {
           <div className="home__row">
             <h1 className="home__row--title">TOUR BÁN CHẠY NHAT</h1>
             <div>
-              <Row>{renderContentDV(ĐD_LQ, 8)}</Row>
+            <Row gutter={[16, 16]}>
+                {renderContentDV(ĐD_LQ, 8)}</Row>
             </div>
           </div>
         </FadeIn>
@@ -84,7 +87,7 @@ function About() {
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
             <h1 className="home__row--title">DỊCH VỤ KHÁC</h1>
-            <Row>
+            <Row gutter={[16, 16]}>
               <Col span={6}>
                 <CardAddress className="address-4" title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>

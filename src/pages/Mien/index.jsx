@@ -2,7 +2,7 @@ import { Button, Carousel, Col, Row } from "antd";
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
-import { DICH_VU, IMG_SLIDE_TOP, MIEN_LQ } from "../../common/configLandingPage";
+import { DICH_VU, IMG_SIDE_ABOUT, IMG_SLIDE_TOP, MIEN_LQ } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
 import IMG_MIEN_BAC from "../../common/image/slideTop/IMG_TOP_2.jpg";
 import CardContent from "../../components/CardContent";
@@ -46,11 +46,11 @@ function About() {
 
   return (
     <div className="home about">
-      <CarouselPage listImage={IMG_SLIDE_TOP} className="home__carousel-page page-bottom" />
+      <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page page-bottom" />
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <Row>
+          <Row gutter={[16, 16]}>
               <Col span={8}>
                 <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
               </Col>
@@ -73,10 +73,12 @@ function About() {
             </div>
             <Carousel draggable ref={node => (slide = node)} dotPosition={"bottom"}>
               <div>
-                <Row>{renderContentDV(DICH_VU, 6)}</Row>
+              <Row gutter={[16, 16]}>
+                  {renderContentDV(DICH_VU, 6)}</Row>
               </div>
               <div>
-                <Row>{renderContentDV(DICH_VU, 6)}</Row>
+              <Row gutter={[16, 16]}>
+                  {renderContentDV(DICH_VU, 6)}</Row>
               </div>
             </Carousel>
             <div className="home__wrapper--icon right">
@@ -109,7 +111,8 @@ function About() {
           <div className="home__row">
             <h1 className="home__row--title">CÁC ĐỊA ĐIỂM LIÊN QUAN</h1>
             <div>
-              <Row>{renderContentDV(MIEN_LQ, 8)}</Row>
+            <Row gutter={[16, 16]}>
+                {renderContentDV(MIEN_LQ, 8)}</Row>
             </div>
           </div>
         </FadeIn>

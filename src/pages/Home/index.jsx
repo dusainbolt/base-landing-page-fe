@@ -133,7 +133,7 @@ function Home() {
           <FadeIn delay={100} transitionDuration={500}>
             <div className="home__row">
               <h1 className="home__row--title">DỊCH VỤ PHỔ BIẾN</h1>
-              <Row>
+              <Row gutter={[16, 16]}>
                 {renderContentDV()}
                 <div className="button">
                   <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
@@ -146,7 +146,7 @@ function Home() {
           <FadeIn delay={100} transitionDuration={500}>
             <div className="home__row">
               <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
-              <Row>
+              <Row gutter={[16, 16]}>
                 <Col span={4}>
                   <CardAddress title="Phú Quốc" img={IMG_ADDRESS} />
                 </Col>
@@ -173,7 +173,7 @@ function Home() {
           <FadeIn delay={100} transitionDuration={500}>
             <div className="home__row">
               <h1 className="home__row--title">ĐIỂM TIN DU LỊCH</h1>
-              <Row>
+              <Row gutter={[16, 16]}>
                 <Col span={8}>
                   <div className="home__row--col-content">
                     <CardBaiViet className="card--content" img={IMG_MIEN_BAC} />

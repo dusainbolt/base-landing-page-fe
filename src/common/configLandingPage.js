@@ -28,6 +28,159 @@ import HELP_ICON_LICH from "./image/HelpIcon/lich.svg";
 import HELP_ICON_SETTING from "./image/HelpIcon/setting.svg";
 import HELP_ICON_MONEY from "./image/HelpIcon/money.svg";
 
+import XU_HUONG_1 from "./image/XuHuong/1.jpg";
+import XU_HUONG_2 from "./image/XuHuong/2.jpg";
+import XU_HUONG_3 from "./image/XuHuong/3.jpg";
+import XU_HUONG_4 from "./image/XuHuong/4.jpg";
+import XU_HUONG_5 from "./image/XuHuong/5.jpg";
+import XU_HUONG_6 from "./image/XuHuong/6.jpg";
+import XU_HUONG_7 from "./image/XuHuong/7.jpg";
+import XU_HUONG_8 from "./image/XuHuong/8.jpg";
+import XU_HUONG_9 from "./image/XuHuong/9.jpg";
+import XU_HUONG_10 from "./image/XuHuong/10.jpg";
+
+import BLOG_NB_1 from "./image/BlogLienQuan/1.jpg";
+import BLOG_NB_2 from "./image/BlogLienQuan/2.webp";
+import BLOG_NB_3 from "./image/BlogLienQuan/3.jpg";
+
+
+export const BLOG_POPULAR = [
+  {
+    title: "Tin Vui Mùa COVID-19: Nhật Bản & Hàn Quốc Nới Lỏng Nhập Cảnh Cho Du Khách Việt Nam",
+    description: "Tin tức Nhật Bản và Hàn Quốc đang “rục rịch” mở cửa du lịch cho du khách đến từ Việt Nam đang gây xôn xao cộng đồng mạng. #teamKlook đã thấy nhớ xứ sở hoa anh đào và đất nước củ sâm hay chưa?",
+  },
+  {
+    title: "Hướng Dẫn Chinh Phục IconSiam Bangkok, Thái Lan",
+    description: "Ở thành phố nhộn nhịp như Bangkok, ngoài nền ẩm thực tuyệt vời, nơi đây còn được biết đến với rất nhiều trung tâm mua sắm và khu phức hợp. Tuy nhiên, có một nơi độc đáo để làm nên sự nổi bật ở đây. Trung tâm mua sắm IconSiam mới mở gần đây đang rất được du khách và người dân ưa chuộng.",
+  },
+  {
+    title: "Cẩm Nang Du Lịch Vũng Tàu Tự Túc Siêu Vui, Siêu Tiết Kiệm",
+    description: "Du lịch Vũng Tàu tự túc, tưởng không vui mà vui không tưởng. Bỏ túi ngay bí kíp vi vu dưới đây để hành trình đi biển thêm phần hào hứng nhé.",
+  },
+  {
+    title: "BACK-UP PLAN CHO MỘT NGÀY MƯA Ở MARINA BAY SANDS",
+    description: "Nếu trót du lịch mùa mưa bão, thì hẳn ai cũng dự phòng cho mình một plan backup rồi nhỉ!",
+  },
+  {
+    title: "Cập nhật: Những điều cần biết về Airbnb khi đến Nhật Bản",
+    description: "Nỗi khổ mang tên “Airbnb” tại Nhật Bản",
+  },
+  {
+    title: "10 khách sạn táo bạo tại Nhật Bản dành cho các cặp đôi",
+    description: "Nếu bạn có cơ hội trải qua kì nghỉ lãng mạn của mình tại Nhật Bản, hãy dành cho người yêu sự bất ngờ tại một trong những khách sạn tình nhân ma mị thú vị này.",
+  }
+];
+
+export const LQ_BLOG = [
+  {
+    title: "Tour Riêng Nửa Ngày Khám Phá Bí Mật Sài Gòn",
+    description:
+      "Tham quan những góc đường bí mật và đi dạo quanh những con đường vắng người ở Sài Gòn như 1 người dân địa phương và khám phá về lịch sử, văn hóa và cách sống ở thành phố Hồ Chí Minh. Với tour tham quan nửa ngày trên xe máy, đầu tiên bạn sẽ đến chợ hoa Hồ Thị Kỷ",
+    img: BLOG_NB_1,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Tour 3 đảo tham quan Hòn Móng Tay, Hòn Dăm Ngang và Hòn Mây Rút ở Phú Quốc",
+    description:
+      "Đắm mình dưới ánh nắng mặt trời và thư giãn dưới tán cây cọ tại hòn móng tay nổi tiếng. Đến hòn Dăm Ngang và chiêm ngưỡng thế giới dưới nước sống động khi bạn trải nghiệm snorkeling. Dùng bữa trưa, nằm dài trên boong tàu, và nghỉ ngơi trong khi chuẩn bị đến điểm dừng cuối của ngày. Nằm giữa trung tâm quần đảo An Thới.",
+    img: BLOG_NB_2,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Gợi Ý 20 Món Ngon Nha Trang Dành Cho Tín Đồ Ẩm Thực",
+    description: `Lên lịch "ăn sập" mọi món ngon Nha Trang trong chuyến du lịch sắp tới, ngại gì mà chưa "triển" ngay?!`,
+    img: BLOG_NB_3,
+    date: "24/09/2020",
+    type: 2,
+  },
+];
+
+export const XU_HUONG_MOi_NHAT = [
+  {
+    title: "Suối Tiên, Phú Quốc - Thung Lũng Hoa Sim Ít Người Biết",
+    description:
+      "Vượt qua con đường đất “nhuộm tím” màu hoa sim đang độ nở rộ, du khách sẽ đến được Suối Tiên, Phú Quốc - nơi lưu giữ nét đẹp thiên nhiên hoang sơ bậc nhất đảo ngọc.",
+    img: XU_HUONG_1,
+    date: "24/09/2020",
+    type: 2,
+  },
+  {
+    title: "11 Nhà Hàng, Quán Ăn Phú Quốc Đỉnh Của Đỉnh Cho Thực Thần",
+    description:
+      "Câu hỏi “ăn gì ở Phú Quốc” sẽ chẳng còn nan giải nữa khi bạn bỏ túi 11 nhà hàng, quán ăn Phú Quốc được tín đồ ẩm thực mê mệt trong bài viết này.",
+    img: XU_HUONG_2,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Cuối Tuần Check-in Cực Chất Ở 18 Địa Điểm Du Lịch Gần Sài Gòn",
+    description:
+      "Cuối tuần này nên đi đâu chơi? Tham khảo ngay 18 địa điểm du lịch gần Sài Gòn dưới đây để lên kế hoạch khám phá Sài Gòn thật trọn vẹn nhé!",
+    img: XU_HUONG_3,
+    date: "24/09/2020",
+
+    type: 1,
+  },
+  {
+    title: "Du Lịch Nha Trang Tự Túc: Đi Đâu, Chơi Gì, Ăn Gì?",
+    description:
+      "Kế hoạch du lịch Nha Trang tự túc của bạn sẽ thêm phần chỉn chu khi được thêm thắt nhiều thông tin và mẹo vặt từ Klook. Đọc hết bài viết này để biết nên đi đâu, chơi gì và ăn gì khi đi Nha Trang tự túc nhé!",
+    img: XU_HUONG_4,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Phú Quốc Có Gì Chơi? Gợi Ý 10 Hoạt Động Thơ Mộng Ở Đảo Ngọc",
+    description:
+      "“Phú Quốc có gì chơi?” là thắc mắc thường trực của đại đa số #teamKlook, đặc biệt đối với người lần đầu tiên vi vu đến đảo ngọc. Đọc hết bài viết này để lên kế hoạch du lịch Phú Quốc tự túc cùng “nửa kia” thật chuẩn chỉnh nhé.",
+    img: XU_HUONG_5,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Suối Tranh Phú Quốc - Góc Thiên Nhiên Rực Rỡ Ở Đảo Ngọc",
+    description:
+      "Đi du lịch đảo ngọc mà chưa check-in tại Suối Tranh, Phú Quốc thì quả là thiếu sót lớn đấy!",
+    img: XU_HUONG_6,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Xê Dịch Đầy Cảm Hứng Với Lịch Trình Tự Chọn Của Klook",
+    description:
+      "Du lịch tự túc chưa bao giờ hào hứng, đơn giản và tiết kiệm đến vậy. Tất cả là nhờ vào Lịch Trình Tự Chọn của Klook.",
+    img: XU_HUONG_7,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Review Noir. Spa, Trải Nghiệm Thư Giãn Trong Bóng Đêm Siêu Độc Ở Sài Gòn",
+    description:
+      "Cuối tuần này, hãy lên kế hoạch chiều chuộng bản thân bằng cách tắm thảo dược quý của người Dao Đỏ cùng nhiều dịch vụ hót-hòn-họt khác tại Noir. Spa, Sài Gòn.",
+    img: XU_HUONG_8,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "Cẩm Nang Du Lịch Nha Trang Cho Hội Ghiền Du Lịch Tự Túc",
+    description:
+      "Bỏ túi liền cẩm nang du lịch Nha Trang tự túc cực chi tiết, cực tiết kiệm dành cho #teamKlook nào đang dự định vi vu đến thành phố biển.",
+    img: XU_HUONG_9,
+    date: "24/09/2020",
+    type: 1,
+  },
+  {
+    title: "20 Món Ngon Hà Nội Vừa Nghe Tên Đã Thèm",
+    description:
+      "Ẩm thực Hà Nội đã tồn tại qua nhiều thế kỷ, được lưu truyền từ đời này sang đời kia, tạo nên hương vị Đất Bắc đặc trưng. Nếu có dịp du lịch đến thủ đô, đừng quên thưởng thức 20 món ngon Hà Nội được Klook tổng hợp trong bài viết dưới đây nhé!",
+    img: XU_HUONG_10,
+    date: "24/09/2020",
+    type: 2,
+  },
+];
+
 export const MenuTop = [
   {
     name: "Help",
@@ -39,7 +192,7 @@ export const MenuTop = [
   },
   {
     name: "Blog",
-    link: "/help",
+    link: "/blog",
   },
   {
     name: "About",
@@ -458,7 +611,8 @@ export const HELP_SETTING = [
     description: [
       <>
         <p>
-        Để biết thêm thông tin, xin liên hệ với chúng tôi qua hỗ trợ Stravel và gửi yêu cầu "Câu hỏi chung".
+          Để biết thêm thông tin, xin liên hệ với chúng tôi qua hỗ trợ Stravel và gửi yêu cầu "Câu
+          hỏi chung".
         </p>
       </>,
     ],

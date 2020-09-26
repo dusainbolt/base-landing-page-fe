@@ -16,7 +16,7 @@ function CardContentTwo({
     <div className="home__row">
       <h1 className="home__row--title">{title}</h1>
       <div className="home__row--new">
-        <Row>
+      <Row gutter={[16, 16]}>
           <Col span={18}>
             <div className="content-large">
               <div className="img-bg">
