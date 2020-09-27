@@ -4,6 +4,7 @@ import Mien from "./pages/Mien";
 import Tour from "./pages/Tour";
 import Help from "./pages/Help";
 import Blog from "./pages/Blog";
+import BlogChiTiet from "./pages/BlogChiTiet";
 
 export const WebRoutes = [
   {
@@ -16,6 +17,12 @@ export const WebRoutes = [
     name: "Blog",
     path: "/blog",
     component: Blog,
+    exact: true,
+  },
+  {
+    name: "BlogChiTiet",
+    path: "/blog-chi-tiet",
+    component: BlogChiTiet,
     exact: true,
   },
   {

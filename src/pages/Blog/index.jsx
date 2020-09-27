@@ -18,7 +18,7 @@ import { getTypeTravel, onRedirect } from "../../utils";
 function Blog() {
   const renderXuHuong = () => {
     return XU_HUONG_MOi_NHAT.map((item, index) => (
-      <div key={index} className="home__row--col-content">
+      <div onClick={() => onRedirect("/blog-chi-tiet")} key={index} className="home__row--col-content">
         <CardBlogNgang
           title={item.title}
           description={item.description}
@@ -33,7 +33,7 @@ function Blog() {
 
   const renderNoiBatBlog = () => {
     return LQ_BLOG.map((item, index) => (
-      <Col key={index} span={8}>
+      <Col onClick={() => onRedirect("/blog-chi-tiet")} key={index} span={8}>
         <div className="home__row--col-content">
           <CardBlogDoc
             title={item.title}
@@ -49,7 +49,7 @@ function Blog() {
 
   const renderBlogPopular = () => {
     return BLOG_POPULAR.map((item, index) => (
-      <div key={index} className="home__row--col-content">
+      <div onClick={() => onRedirect("/blog-chi-tiet")} key={index} className="home__row--col-content">
         <CardBlogTrend title={item.title} description={item.description} count={index + 1} />
       </div>
     ));
