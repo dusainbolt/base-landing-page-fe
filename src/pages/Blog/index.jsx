@@ -61,7 +61,7 @@ function Blog() {
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">
-            <h1 className="blog__title">Nội dung liên quan</h1>
+            <h1 className="blog__title">Diểm tin du lịch</h1>
             <div className="blog__underline"></div>
             <Row gutter={[16, 16]}>{renderNoiBatBlog()}</Row>
           </div>

@@ -5,6 +5,8 @@ import { PhoneFilled, MailFilled, EnvironmentFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import Search from "antd/lib/input/Search";
 import IMG_FOOTER from "../../../common/image/4277831_upload_2018-4-2_14-40-43.png";
+import IMG_PAY_FOOTER from "../../../common/image/footer.png";
+
 const { Footer } = Layout;
 
 export default function commonFooter() {
@@ -74,14 +76,7 @@ export default function commonFooter() {
             <Col className="footer__bottom--col col-payment" span={5}>
               <Button ghost>Hỏi đáp STRAVEL</Button>
               <div className="footer__bottom--title payment">KÊNH THANH TOÁN</div>
-              <ul>
-                <li>s</li>
-                <li>s</li>
-                <li>s</li>
-                <li>s</li>
-                <li>s</li>
-                <li>s</li>
-              </ul>
+              <img style={{width: "135px"}} src={IMG_PAY_FOOTER} />
             </Col>
           </Row>
         </div>
