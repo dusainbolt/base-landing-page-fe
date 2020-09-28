@@ -13,7 +13,6 @@ import { useState } from "react";
 import { useMemo } from "react";
 
 function Tour() {
-  
   const [dataTour, setDataTour] = useState(TOUR_BAN_CHAY);
 
   const renderContentDV = useMemo(() => {
@@ -36,10 +35,10 @@ function Tour() {
         );
       });
     });
-  },[dataTour]);
+  }, [dataTour]);
 
   const shuffleData = () => {
-    setDataTour([ Math.floor(Math.random() * 9999999)]);
+    setDataTour([Math.floor(Math.random() * 9999999)]);
   };
 
   return (
@@ -58,28 +57,32 @@ function Tour() {
                 <h3 className="tour__row--title">Những hoạt động nổi bật</h3>
               </Col>
             </Row>
-            <Row className="tour__row search-page">
-              <div className="tour__search-left">
-                <FilterAddress callBackChange={shuffleData} />
-                <FilterCategory callBackChange={shuffleData}/>
-              </div>
-              <div className="tour__search-right">
-                <div className="tour__search-wrapper">
-                  <h4>Tìm thấy 4225 hoạt động</h4>
-                  <Input
-                    className="input-small"
-                    placeholder="Kêt quả tìm kiếm"
-                    suffix={
-                      <SearchOutlined style={{ color: "rgba(0,0,0,.45)", fontSize: "20px" }} />
-                    }
-                  />
-                  <FilterRow callBackChange={shuffleData} />
-                  <Row className="tour__result-wrapper" gutter={[16, 16]}>
-                    {renderContentDV}
-                  </Row>
-                </div>
-              </div>
-            </Row>
+            <LazyLoad height={800} throttle={400}>
+              <FadeIn delay={100} transitionDuration={500}>
+                <Row className="tour__row search-page">
+                  <div className="tour__search-left">
+                    <FilterAddress callBackChange={shuffleData} />
+                    <FilterCategory callBackChange={shuffleData} />
+                  </div>
+                  <div className="tour__search-right">
+                    <div className="tour__search-wrapper">
+                      <h4>Tìm thấy 4225 hoạt động</h4>
+                      <Input
+                        className="input-small"
+                        placeholder="Kêt quả tìm kiếm"
+                        suffix={
+                          <SearchOutlined style={{ color: "rgba(0,0,0,.45)", fontSize: "20px" }} />
+                        }
+                      />
+                      <FilterRow callBackChange={shuffleData} />
+                      <Row className="tour__result-wrapper" gutter={[16, 16]}>
+                        {renderContentDV}
+                      </Row>
+                    </div>
+                  </div>
+                </Row>
+              </FadeIn>
+            </LazyLoad>
           </div>
         </FadeIn>
       </LazyLoad>

@@ -1,0 +1,65 @@
+.mien {
+  .tour__content-wrapper {
+    margin-top: 0;
+  }
+  .carousel-ads {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .home__row {
+    z-index: 99999;
+  }
+  .breadcrumb {
+    margin-bottom: 50px;
+  }
+  .mien-note {
+    color: #333;
+    margin-top: 76px;
+    .title-mien {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 23px;
+    }
+    .wrapper {
+      margin-top: 55px;
+      background-color: white;
+      padding: 60px 60px 20px;
+    }
+    .wrapper-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 24px;
+    }
+    iframe {
+      margin-top: 10px;
+      width: 100%;
+      height: 275px;
+    }
+    .temp{
+        .title-month{
+            width: max-content;
+            font-weight: 600;
+        }
+        .title-temp{
+            .item-1{
+                margin-right: 12px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+            .item-3{
+                margin-right: 12px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .item-2{
+                margin-right: 12px;
+                font-weight: 600;
+                font-size: 24px;
+                color: #999999;
+            }
+        }
+    }
+  }
+}
