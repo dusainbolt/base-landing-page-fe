@@ -43,15 +43,11 @@ export const WebRoutes = [
     path: "/city",
     component: City,
     exact: true,
-  },  {
-    name: "City",
-    path: "/city",
-    component: City,
-    exact: true,
-  },  {
+  },
+  {
     name: "Tour",
     path: "/tour",
-    component: Tour,
+    component:Tour,
     exact: true,
   },
   {

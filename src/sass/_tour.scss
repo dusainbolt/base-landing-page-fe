@@ -1,0 +1,197 @@
+.tour {
+  &__content-wrapper {
+    background-color: white;
+    &.top {
+      margin-top: 64px;
+      padding-top: 20px;
+    }
+  }
+  &__row {
+    max-width: 1160px;
+    margin: auto;
+    &.search-page {
+      margin-top: 32px;
+      border-top: #e0e0e0 1px solid;
+      padding-bottom: 15px;
+    }
+    &--title{
+        font-size: 32px;
+        font-weight: 600;
+        color: #333333;
+        line-height: 1.25;
+        margin-bottom: 0;
+    }
+  }
+  .ant-breadcrumb-link {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .ant-breadcrumb > span:first-child {
+    color: $primary-color-bold;
+  }
+  &__search-left {
+    flex: 0 0 260px;
+    max-width: 260px;
+    .search__filter {
+      padding: 24px 0;
+    }
+    .search-left-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333333;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      word-break: break-word;
+      padding-right: 19px;
+    }
+    .ant-tree-title {
+      display: inline-block;
+      white-space: normal;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-left: 0;
+      vertical-align: middle;
+    }
+    .ant-tree-treenode{
+        margin-top: 8px;
+    }
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+        background-color: $primary-color-bold;
+        border-color: $primary-color-bold;
+    }
+    .button {
+        margin-top: 15px;
+        padding: 0 10px;
+        button {
+            width: 100%;
+            height: 30px;
+            line-height: 18px;
+        }
+    }
+  }
+  &__search-right {
+    border-left: #e0e0e0 1px solid;
+    flex: 0 0 900px;
+    max-width: 900px;
+  }
+  &__search-wrapper{
+    width: 901px;
+    padding-left: 36px;
+    padding-top: 24px;
+    position: relative;
+    padding-bottom: 60px;
+    z-index: 1;
+    .input-small{
+        width: 285px;
+    }
+    input::placeholder{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+    }
+    .ant-picker{
+        margin-right: 8px;
+        max-width: 150px;
+        input::placeholder{
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+    .price-wrapper{
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        cursor: pointer;
+        >span {
+            margin-left: auto;
+            padding-right: 8px;
+            font-size: 14px;
+        }
+        width: 205px;
+        height: 32px;
+        border: 1px solid #d9d9d9;
+        &.active{
+            background-color: $primary-color-bold;
+            color: white;
+        }
+    }
+    .accept-wrapper{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 8px;
+        margin-right: 8px;
+        >span {
+            padding-right: 8px;
+            font-size: 14px;
+        }
+        width: 205px;
+        height: 32px;
+        border: 1px solid #d9d9d9;
+        .ant-checkbox-wrapper{
+            margin-left: auto;
+        }
+    }
+    .order-wrapper{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 8px;
+        >span {
+            padding-right: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        width: 285px;
+        height: 32px;
+        .ant-checkbox-wrapper{
+            margin-left: auto;
+        }
+      .ant-select-selection-item{
+            font-size: 14px;
+        }
+    }
+    >h4 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 24px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &--row-search{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+  }
+  &__result-wrapper{
+      padding-top: 25px;
+      .ant-card-cover {
+        height: 156px;
+      }
+      .home__row--col-content {
+        margin-bottom: 12px;
+      }
+      .order{
+          color: #24b985;
+      }
+  }
+}
+
+.price-content{
+    width: 300px;
+    .title{
+        font-size: 16px;
+    }
+    .button{
+        margin-top: 5px;
+        button{
+            min-width: 30px;
+            height: 30px;
+            line-height: 21px;
+        }
+    }
+}

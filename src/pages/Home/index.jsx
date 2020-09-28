@@ -11,7 +11,13 @@ import {
   RightOutlined,
   LeftOutlined,
 } from "@ant-design/icons";
-import { IMG_SLIDE_TOP, IMG_SLIDE_ADS, DICH_VU, ADDRESS, LQ_BLOG } from "../../common/configLandingPage";
+import {
+  IMG_SLIDE_TOP,
+  IMG_SLIDE_ADS,
+  DICH_VU,
+  ADDRESS,
+  LQ_BLOG,
+} from "../../common/configLandingPage";
 import BaMien from "./HomeComponent/BaMien";
 import CardAddress from "../../components/Dot";
 import { getTypeTravel, onRedirect } from "../../utils";
@@ -167,9 +173,7 @@ function Home() {
           <FadeIn delay={100} transitionDuration={500}>
             <div className="home__row">
               <h1 className="home__row--title">ĐIỂM ĐẾN NỔI BẬT</h1>
-              <Row gutter={[16, 16]}>
-                {renderContentAddress()}
-              </Row>
+              <Row gutter={[16, 16]}>{renderContentAddress()}</Row>
             </div>
           </FadeIn>
         </LazyLoad>

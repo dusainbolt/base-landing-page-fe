@@ -51,14 +51,14 @@ export function convertDateTime(timeNumber, type = "") {
   const timeConvert = moment.unix(timeNumber).format(TIME_UTC_FORMAT.TYPE_2);
   const dateConvert = moment.unix(timeNumber).format(DATE_UTC_FORMAT);
   switch (type) {
-  case TYPE_DATE_TIME.DATE:
-    return dateConvert;
-  case TYPE_DATE_TIME.TIME:
-    return timeConvert;
-  case TYPE_DATE_TIME.TIME_AND_DATE:
-    return dateConvert + " " + timeConvert;
-  default:
-    return dateConvert;
+    case TYPE_DATE_TIME.DATE:
+      return dateConvert;
+    case TYPE_DATE_TIME.TIME:
+      return timeConvert;
+    case TYPE_DATE_TIME.TIME_AND_DATE:
+      return dateConvert + " " + timeConvert;
+    default:
+      return dateConvert;
   }
 }
 
@@ -70,13 +70,13 @@ export function genderTimeCount(timeNumber) {
     return "now";
   } else if (duration > 60000 && duration < 3600000) {
     return now.diff(myTime, "minutes") + " minutes";
-  } else if (duration > 3600000 && duration < 86400000){
+  } else if (duration > 3600000 && duration < 86400000) {
     return now.diff(myTime, "hours") + " hours";
-  } else if (duration > 86400000 && duration < 604800000){
+  } else if (duration > 86400000 && duration < 604800000) {
     return now.diff(myTime, "days") + " days";
-  } else if( duration > 604800000){
+  } else if (duration > 604800000) {
     return moment.unix(timeNumber).format(DATE_UTC_FORMAT);
-  }else{
+  } else {
     return moment.unix(timeNumber).format(DATE_UTC_FORMAT);
   }
 }
@@ -96,8 +96,8 @@ export function formatCommaNumber(num, fix) {
 }
 
 export function convertSalePrice(sale) {
-  if(!sale) return 0;
-  return formatCommaNumber(Math.round(sale * 70 / 100));
+  if (!sale) return 0;
+  return formatCommaNumber(Math.round((sale * 70) / 100));
 }
 
 export const onRedirect = path => {
@@ -106,4 +106,28 @@ export const onRedirect = path => {
 
 export const getTypeTravel = type => {
   return type === 1 ? "Hoạt động trải nghiệm" : "Ăn uống";
+};
+
+export const disabledDate = current => {
+  return current && current < moment().endOf("day");
+};
+
+export const shuffleArray = array => {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 };

@@ -1,103 +1,90 @@
-import { Col, Row, Tabs } from "antd";
-import React, { useRef } from "react";
+import { Breadcrumb, Col, DatePicker, Input, Popconfirm, Popover, Row, Slider, Tabs } from "antd";
+import React from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
-import { CONTENT_ABOUT, IMG_SIDE_ABOUT } from "../../common/configLandingPage";
-import CarouselPage from "../../components/CaraouselPage";
-import IMG_DAU_TU_LIST from "../../common/image/dautudulich.png";
+import { CONTENT_ABOUT, TOUR_BAN_CHAY } from "../../common/configLandingPage";
+import FilterCategory from "../../components/FilterAddress";
+import FilterAddress from "../../components/FilterAddress";
+import { SearchOutlined, DownOutlined } from "@ant-design/icons";
+import { disabledDate, shuffleArray } from "../../utils";
+import FilterRow from "../../components/FilterRow";
+import CardContent from "../../components/CardContent";
+import { useState } from "react";
+import { useMemo } from "react";
 
-const { TabPane } = Tabs;
+function Tour() {
+  
+  const [dataTour, setDataTour] = useState(TOUR_BAN_CHAY);
 
-function About() {
-  const { ABOUT_US, TAM_NHIN, CAM_KET, NHA_DAU_TU } = CONTENT_ABOUT;
-  const slide = [];
-  slide[1] = useRef(null);
-  slide[2] = useRef(null);
-  slide[3] = useRef(null);
-  slide[4] = useRef(null);
-
-  const onChangeTabs = activeKey => {
-    if (slide[activeKey] && slide[activeKey].current)
-      slide[activeKey].current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+  const renderContentDV = useMemo(() => {
+    return shuffleArray(TOUR_BAN_CHAY).map((item, index) => {
+      return shuffleArray(TOUR_BAN_CHAY).map((item, index) => {
+        return (
+          <Col key={index} span={8}>
+            <div className="home__row--col-content card-content">
+              <CardContent
+                title={item.title}
+                price={item.price}
+                sale={item.sale}
+                rate={item.rate}
+                comment={item.comment}
+                order={item.order}
+                img={item.img}
+              />
+            </div>
+          </Col>
+        );
       });
+    });
+  },[dataTour]);
+
+  const shuffleData = () => {
+    setDataTour([ Math.floor(Math.random() * 9999999)]);
   };
 
   return (
-    <div className="home about">
-      <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page" />
-      <Tabs onChange={onChangeTabs} defaultActiveKey="1">
-        <TabPane tab="VỀ CHÚNG TÔI" key="1"></TabPane>
-        <TabPane tab="Sứ mệnh" key="2"></TabPane>
-        <TabPane tab="Cam kết" key="3"></TabPane>
-        <TabPane tab="Nhà đầu tư" key="4"></TabPane>
-      </Tabs>
+    <div className="home about tour">
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
-          <Row className="about__row">
-            <div ref={slide[1]} className="about__row--content">
-              <h3 className="about__row--content__title">VỀ CHÚNG TÔI</h3>
-              <p>
-                <b>{ABOUT_US[0]}</b>
-              </p>
-              <p>{ABOUT_US[1]}</p>
-            </div>
-          </Row>
-        </FadeIn>
-      </LazyLoad>
-      <LazyLoad height={800} throttle={400}>
-        <FadeIn delay={100} transitionDuration={500}>
-          <Row className="about__row bg">
-            <div ref={slide[2]} className="about__row--content">
-              <h3 className="about__row--content__title">SƯ MỆNH</h3>
-              <p>
-                <b>{TAM_NHIN[0]}</b>
-              </p>
-              <p>{TAM_NHIN[1]}</p>
-            </div>
-          </Row>
-        </FadeIn>
-      </LazyLoad>
-      <Row className="about__row">
-        <div ref={slide[3]} className="about__row--content">
-          <h3 className="about__row--content__title">CAM KẾT</h3>
-          <p>
-            <b>{CAM_KET[0]}</b>
-          </p>
-          <p>{CAM_KET[1]}</p>
-          <p>{CAM_KET[2]}</p>
-        </div>
-      </Row>
-      <LazyLoad height={800} throttle={400}>
-        <FadeIn delay={100} transitionDuration={500}>
-          <Row className="about__row bg">
-            <div ref={slide[4]} className="about__row--content">
-              <h3 className="about__row--content__title">NHÀ ĐẦU TƯ</h3>
-              <p>
-                <b>{NHA_DAU_TU[0]}</b>
-              </p>
-              <Row className="about__row--content__bottom">
-                {/* <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col> */}
-                <img style={{ width: "100%" }} src={IMG_DAU_TU_LIST} alt="img_dau_tu" />
-              </Row>
-            </div>
-          </Row>
+          <div className="tour__content-wrapper top">
+            <Row className="tour__row">
+              <Col span={24}>
+                <Breadcrumb separator=">">
+                  <Breadcrumb.Item>Trang Chủ</Breadcrumb.Item>
+                  <Breadcrumb.Item>Những hoạt động nổi bật</Breadcrumb.Item>
+                </Breadcrumb>
+              </Col>
+              <Col span={24}>
+                <h3 className="tour__row--title">Những hoạt động nổi bật</h3>
+              </Col>
+            </Row>
+            <Row className="tour__row search-page">
+              <div className="tour__search-left">
+                <FilterAddress callBackChange={shuffleData} />
+                <FilterCategory callBackChange={shuffleData}/>
+              </div>
+              <div className="tour__search-right">
+                <div className="tour__search-wrapper">
+                  <h4>Tìm thấy 4225 hoạt động</h4>
+                  <Input
+                    className="input-small"
+                    placeholder="Kêt quả tìm kiếm"
+                    suffix={
+                      <SearchOutlined style={{ color: "rgba(0,0,0,.45)", fontSize: "20px" }} />
+                    }
+                  />
+                  <FilterRow callBackChange={shuffleData} />
+                  <Row className="tour__result-wrapper" gutter={[16, 16]}>
+                    {renderContentDV}
+                  </Row>
+                </div>
+              </div>
+            </Row>
+          </div>
         </FadeIn>
       </LazyLoad>
     </div>
   );
 }
 
-export default About;
+export default Tour;

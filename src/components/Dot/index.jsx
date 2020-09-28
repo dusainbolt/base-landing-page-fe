@@ -1,6 +1,6 @@
 import React from "react";
 
-function CardAddress({ img, title, className = "" }) {
+function Dot({ img, title, className = "" }) {
   return (
     <div className={`home__row--col-address ${className}`}>
       <div className="home__row--col-address__image">
@@ -11,4 +11,4 @@ function CardAddress({ img, title, className = "" }) {
   );
 }
 
-export default CardAddress;
+export default Dot;
