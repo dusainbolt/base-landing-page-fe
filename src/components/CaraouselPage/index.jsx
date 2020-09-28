@@ -5,7 +5,7 @@ import LazyLoad from "react-lazyload";
 import { IMG_SLIDE_TOP } from "../../common/configLandingPage";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 
-function  CarouselPage({ listImage, className, type = "img" }) {
+function CarouselPage({ listImage, sideContent = null, className, type = "img" }) {
   let slide = useRef(null);
 
   const renderListCarousel = () => {
@@ -38,6 +38,7 @@ function  CarouselPage({ listImage, className, type = "img" }) {
   };
   return (
     <div className={`home__wrapper ${className}`}>
+      {sideContent}
       <div className="home__wrapper--icon left">
         <LeftCircleOutlined onClick={onPrevious} />
       </div>

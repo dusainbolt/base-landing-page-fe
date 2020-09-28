@@ -96,7 +96,7 @@ function Home() {
 
   const renderContentAddress = () => {
     return ADDRESS.map(item => (
-      <Col key={item.title} span={4}>
+      <Col onClick={() => onRedirect("/city")} key={item.title} span={4}>
         <CardAddress title={item.title} img={item.img} />
       </Col>
     ));
@@ -105,7 +105,7 @@ function Home() {
   const renderNoiBatBlog = () => {
     return LQ_BLOG.map((item, index) => (
       <Col key={index} span={8}>
-        <div className="home__row--col-content">
+        <div onClick={() => onRedirect("/blog-chi-tiet")} className="home__row--col-content">
           <CardBlogDoc
             title={item.title}
             description={item.description}
@@ -155,7 +155,7 @@ function Home() {
               <Row gutter={[16, 16]}>
                 {renderContentDV()}
                 <div className="button">
-                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">
+                  <Button onClick={() => onRedirect("/tour")} className="primary no-bg">
                     Xem thêm
                   </Button>
                 </div>

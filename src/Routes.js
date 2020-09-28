@@ -1,6 +1,7 @@
 import HomeWeb from "./pages/Home";
 import About from "./pages/About";
 import Mien from "./pages/Mien";
+import City from "./pages/City";
 import Tour from "./pages/Tour";
 import Help from "./pages/Help";
 import Blog from "./pages/Blog";
@@ -38,6 +39,16 @@ export const WebRoutes = [
     exact: true,
   },
   {
+    name: "City",
+    path: "/city",
+    component: City,
+    exact: true,
+  },  {
+    name: "City",
+    path: "/city",
+    component: City,
+    exact: true,
+  },  {
     name: "Tour",
     path: "/tour",
     component: Tour,
