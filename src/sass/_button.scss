@@ -19,9 +19,13 @@ button.ant-btn {
   &.btn-primary{
     background-color: $primary-color-bold;
     color: white;
+ 
   }
   &.btn-white {
     background-color: white;
     color: $primary-color-bold;
+  }
+  &:hover{
+    opacity: 0.8;
   }
 }

@@ -10,7 +10,6 @@ function CardContent({
   rate = 0,
   comment = "1,222",
   order = "2K",
-  // description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium, urna at congue dapibus, nulla ipsum imperdiet augue, gravida euismod",
 }) {
   return (
     <Card hoverable cover={<img alt="example" src={img} />}>
@@ -31,7 +30,6 @@ function CardContent({
         </div>
         <span className="order">Có thể đặt ngay hôm nay</span>
       </div>
-      {/* </div> */}
     </Card>
   );
 }
