@@ -6,6 +6,7 @@ import Tour from "./pages/Tour";
 import Help from "./pages/Help";
 import Blog from "./pages/Blog";
 import BlogChiTiet from "./pages/BlogChiTiet";
+import TourChiTiet from "./pages/TourChiTiet";
 
 export const WebRoutes = [
   {
@@ -48,6 +49,12 @@ export const WebRoutes = [
     name: "Tour",
     path: "/tour",
     component:Tour,
+    exact: true,
+  },
+  {
+    name: "TourChiTiet",
+    path: "/tour-chi-tiet",
+    component:TourChiTiet,
     exact: true,
   },
   {

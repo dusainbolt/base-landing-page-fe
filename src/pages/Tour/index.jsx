@@ -6,7 +6,7 @@ import { CONTENT_ABOUT, TOUR_BAN_CHAY } from "../../common/configLandingPage";
 import FilterCategory from "../../components/FilterAddress";
 import FilterAddress from "../../components/FilterAddress";
 import { SearchOutlined, DownOutlined } from "@ant-design/icons";
-import { disabledDate, shuffleArray } from "../../utils";
+import { disabledDate, onRedirect, shuffleArray } from "../../utils";
 import FilterRow from "../../components/FilterRow";
 import CardContent from "../../components/CardContent";
 import { useState } from "react";
@@ -20,7 +20,7 @@ function Tour() {
       return shuffleArray(TOUR_BAN_CHAY).map((item, index) => {
         return (
           <Col key={index} span={8}>
-            <div className="home__row--col-content card-content">
+            <div onClick={() => onRedirect("/tour-chi-tiet")} className="home__row--col-content card-content">
               <CardContent
                 title={item.title}
                 price={item.price}

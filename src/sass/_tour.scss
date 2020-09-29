@@ -179,6 +179,14 @@
           color: #24b985;
       }
   }
+  .home__wrapper.carousel-ads{
+    margin: 0 auto;
+    height: 370px;
+    margin-top: 20px;
+    .ant-carousel{
+      height: 370px;
+    }
+  }
 }
 
 .price-content{
