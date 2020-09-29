@@ -28,7 +28,7 @@ function About() {
     <div className="home about">
       <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page" />
       <Tabs onChange={onChangeTabs} defaultActiveKey="1">
-        <TabPane tab="VỀ CHÚNG TÔI" key="1"></TabPane>
+        <TabPane tab="Về chúng tôi" key="1"></TabPane>
         <TabPane tab="Sứ mệnh" key="2"></TabPane>
         <TabPane tab="Cam kết" key="3"></TabPane>
         <TabPane tab="Nhà đầu tư" key="4"></TabPane>
@@ -50,7 +50,7 @@ function About() {
         <FadeIn delay={100} transitionDuration={500}>
           <Row className="about__row bg">
             <div ref={slide[2]} className="about__row--content">
-              <h3 className="about__row--content__title">SƯ MỆNH</h3>
+              <h3 className="about__row--content__title">SỨ MỆNH</h3>
               <p>
                 <b>{TAM_NHIN[0]}</b>
               </p>
@@ -78,18 +78,6 @@ function About() {
                 <b>{NHA_DAU_TU[0]}</b>
               </p>
               <Row className="about__row--content__bottom">
-                {/* <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col>
-                <Col span={6}>
-                  <div className="image-demo"></div>
-                </Col> */}
                 <img style={{ width: "100%" }} src={IMG_DAU_TU_LIST} alt="img_dau_tu" />
               </Row>
             </div>

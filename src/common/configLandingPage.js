@@ -217,7 +217,7 @@ export const XU_HUONG_MOi_NHAT = [
 
 export const MenuTop = [
   {
-    name: "Help",
+    name: "Trợ giúp",
     link: "/help",
   },
   {
@@ -229,11 +229,11 @@ export const MenuTop = [
     link: "/blog",
   },
   {
-    name: "About",
+    name: "Giới thiệu",
     link: "/about",
   },
   {
-    name: "Home",
+    name: "Trang chủ",
     link: "/",
   },
 ];

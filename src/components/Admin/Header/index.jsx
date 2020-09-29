@@ -8,6 +8,7 @@ import { useCallback } from "react";
 import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { MenuTop } from "../../../common/configLandingPage";
+import { onRedirect } from "../../../utils";
 
 function CommonHeader({ toggleMenu, refHeader }) {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
 
   return (
     <div className="header" id="headerWeb">
-      <img className="header__logo" src={LogoHeader} alt="logo" />
+      <img className="header__logo" src={LogoHeader} onClick={() => onRedirect("/")} alt="logo" />
       <div className="header__menu">
         <ul>{renderMenuTop()}</ul>
       </div>
