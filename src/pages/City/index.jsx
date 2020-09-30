@@ -1,4 +1,4 @@
-import { Button, Carousel, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
@@ -12,8 +12,7 @@ import IMG_NGANG_2 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
 import IMG_ADDRESS from "../../common/image/imageAddress/1.webp";
 import ContentSide from "../../components/SlideContent";
 
-function About() {
-  let slide = useRef(null);
+function City() {
 
   const renderContentDV = (listContent, col) => {
     return listContent.map((item, index) => {
@@ -106,4 +105,4 @@ function About() {
   );
 }
 
-export default About;
+export default City;

@@ -1,12 +1,12 @@
-import { Breadcrumb, Col, DatePicker, Input, Popconfirm, Popover, Row, Slider, Tabs } from "antd";
+import { Breadcrumb, Col, Input, Row } from "antd";
 import React from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
-import { CONTENT_ABOUT, TOUR_BAN_CHAY } from "../../common/configLandingPage";
+import { TOUR_BAN_CHAY } from "../../common/configLandingPage";
 import FilterCategory from "../../components/FilterAddress";
 import FilterAddress from "../../components/FilterAddress";
-import { SearchOutlined, DownOutlined } from "@ant-design/icons";
-import { disabledDate, onRedirect, shuffleArray } from "../../utils";
+import { SearchOutlined } from "@ant-design/icons";
+import { onRedirect, shuffleArray } from "../../utils";
 import FilterRow from "../../components/FilterRow";
 import CardContent from "../../components/CardContent";
 import { useState } from "react";

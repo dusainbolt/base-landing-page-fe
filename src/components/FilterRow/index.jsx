@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Checkbox, DatePicker, Input, Popover, Select, Slider } from "antd";
+import { Button, Checkbox, DatePicker, Popover, Select, Slider } from "antd";
 import { InfoCircleOutlined, DownOutlined } from "@ant-design/icons";
 import { disabledDate, formatCommaNumber } from "../../utils";
 

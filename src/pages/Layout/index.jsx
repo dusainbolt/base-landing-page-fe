@@ -4,7 +4,6 @@ import { Layout } from "antd";
 import CommonHeader from "../../components/Admin/Header";
 import { showBodyHeader, showTopHeader } from "../../utils";
 import Footer from "../../components/Admin/Footer";
-import { useRef } from "react";
 
 const { Header, Content } = Layout;
 function App({ component: Mycomponent, classes, name, ...remainProps }) {

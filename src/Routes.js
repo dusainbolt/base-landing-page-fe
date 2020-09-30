@@ -7,6 +7,7 @@ import Help from "./pages/Help";
 import Blog from "./pages/Blog";
 import BlogChiTiet from "./pages/BlogChiTiet";
 import TourChiTiet from "./pages/TourChiTiet";
+import ShoppingCart from "./pages/ShoppingCart";
 
 export const WebRoutes = [
   {
@@ -55,6 +56,12 @@ export const WebRoutes = [
     name: "TourChiTiet",
     path: "/tour-chi-tiet",
     component:TourChiTiet,
+    exact: true,
+  },
+  {
+    name: "ShoppingCart",
+    path: "/shoppingcart",
+    component: ShoppingCart,
     exact: true,
   },
   {

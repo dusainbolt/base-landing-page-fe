@@ -1,17 +1,11 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 import LogoHeader from "../../../common/image/LOGO.png";
-import { useMemo } from "react";
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { useCallback } from "react";
 import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { MenuTop } from "../../../common/configLandingPage";
 import { onRedirect } from "../../../utils";
 
 function CommonHeader({ toggleMenu, refHeader }) {
-  const { t } = useTranslation();
 
   const renderMenuTop = () => {
     return MenuTop.map((item, index) => {
@@ -32,7 +26,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
       <div className="header__icon">
         <div className="header__icon-wrapper">
           <SearchOutlined className="header__icon--item" />
-          <ShoppingCartOutlined className="header__icon--item" />
+          <ShoppingCartOutlined onClick={() => onRedirect("/shoppingcart")} className="header__icon--item" />
           <UserOutlined className="header__icon--item" />
         </div>
       </div>

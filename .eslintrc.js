@@ -24,7 +24,7 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "rules": {
+    "rules": {        
         "max-len": ["error", { code: 200 }],
         "indent": ["error", 2],
         "linebreak-style": ["error", "unix"],
@@ -34,7 +34,7 @@ module.exports = {
         "react/jsx-closing-bracket-location": [1, "line-aligned"],
         "arrow-parens": ["error", "as-needed"],
         "no-unused-vars": "off",
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "react/display-name": [{ "ignoreTranspilerName": false}],
     }
-    
 };

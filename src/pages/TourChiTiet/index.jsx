@@ -19,13 +19,9 @@ import {
   ThunderboltFilled,
   AppstoreAddOutlined,
 } from "@ant-design/icons";
-import { disabledDate, getRandomInt, shuffleArray } from "../../utils";
-import FilterRow from "../../components/FilterRow";
-import CardContent from "../../components/CardContent";
+import { getRandomInt, onRedirect, shuffleArray } from "../../utils";
 import { useState } from "react";
-import { useMemo } from "react";
 import IMG_BLOG_ITEM_1 from "../../common/image/DichVuPhoBien/dich_vu_3.jpg";
-import { List } from "antd/lib/form/Form";
 import TextArea from "antd/lib/input/TextArea";
 const configInfoTop = [
   {
@@ -55,7 +51,6 @@ const configInfoTop = [
 ];
 
 function Tour() {
-  const [dataTour, setDataTour] = useState(TOUR_BAN_CHAY);
   let slideAds = useRef(null);
 
   const data = [
@@ -147,7 +142,7 @@ function Tour() {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              <img src={item} />
+              <img src={item} alt="img"/>
             </FadeIn>
           </LazyLoad>
         </div>
@@ -161,8 +156,8 @@ function Tour() {
         <div className="tour__shop--wrapper">
           <div className="para">Xin hoàn tất các mục yêu cầu để chuyển đến bước tiếp theo </div>
           <div className="button-wrapper">
-            <Button className="primary btn-primary add">THÊM VÀO GIỎ HÀNG</Button>
-            <Button className="primary btn-primary">ĐẶT NGAY</Button>
+            <Button onClick={() => onRedirect("/shoppingcart")} className="primary btn-primary add">THÊM VÀO GIỎ HÀNG</Button>
+            <Button onClick={() => onRedirect("/shoppingcart")} className="primary btn-primary">ĐẶT NGAY</Button>
           </div>
         </div>
       </div>
@@ -284,7 +279,7 @@ function Tour() {
                           Basco.
                         </p>
                         <div className="blog-item__image-page">
-                          <img src={IMG_BLOG_ITEM_1} />
+                          <img src={IMG_BLOG_ITEM_1} alt="img"/>
                         </div>
                         <Divider />
                         <h3 className="title-description">

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { withTranslation } from "react-i18next";
 import { Router, Switch, Route } from "react-router-dom";
 import { browserHistory } from "./utils/history";
 import LayoutWeb from "./pages/Layout";
@@ -25,7 +24,6 @@ class App extends Component {
     return html;
   };
   render() {
-    const { layout } = this.props;
     return (
       <div className="App">
         <Router history={browserHistory}>

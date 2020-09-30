@@ -6,7 +6,6 @@ import IMG_TOP_4 from "./image/slideTop/videoTop.mov";
 import IMG_DV_1 from "./image/DichVuPhoBien/dich_vu_1.jpg";
 import IMG_DV_2 from "./image/DichVuPhoBien/dich_vu_2.jpg";
 import IMG_DV_3 from "./image/DichVuPhoBien/dich_vu_3.jpg";
-import IMG_DV_4 from "./image/DichVuPhoBien/dich_vu_4.jpg";
 
 import IMG_DV_NB_1 from "./image/DichVuNoiBat/1.jpg";
 import IMG_DV_NB_2 from "./image/DichVuNoiBat/2.jpg";
@@ -15,7 +14,6 @@ import IMG_DV_NB_4 from "./image/DichVuNoiBat/4.jpg";
 import IMG_DV_NB_5 from "./image/DichVuNoiBat/5.jpg";
 import IMG_DV_NB_6 from "./image/DichVuNoiBat/6.jpg";
 import IMG_DV_NB_7 from "./image/DichVuNoiBat/7.jpg";
-import IMG_DV_NB_8 from "./image/DichVuNoiBat/8.jpg";
 
 import IMG_SLIDE_PAGE_1 from "./image/SlidePage/1.jpg";
 import IMG_SLIDE_PAGE_2 from "./image/SlidePage/2.jpg";

@@ -1,4 +1,4 @@
-import { Breadcrumb, Button, Carousel, Col, Divider, Input, Row } from "antd";
+import { Breadcrumb, Carousel, Col, Divider, Row } from "antd";
 import React, { useMemo, useRef, useState } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
@@ -6,35 +6,22 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import {
   IMG_SIDE_ABOUT,
   IMG_SLIDE_ADS,
-  MIEN_LQ,
   TOUR_BAN_CHAY,
 } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
 import CardContent from "../../components/CardContent";
 import ContentSide from "../../components/SlideContent";
-import CardAddress from "../../components/Dot";
 import IMG_NGANG_1 from "../../common/image/DichVuPhoBien/dich_vu_1.jpg";
 import IMG_NGANG_2 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
-import IMG_ADDRESS from "../../common/image/imageAddress/1.webp";
 import CardTwoNgang from "../../components/CardTwoNgang";
 import FilterAddress from "../../components/FilterAddress";
-import FilterCategory from "../../components/FilterCategory";
 
 import FilterRow from "../../components/FilterRow";
 import { shuffleArray } from "../../utils";
 
 function Mien() {
-  let slide = useRef(null);
 
   const [dataTour, setDataTour] = useState(TOUR_BAN_CHAY);
-
-  const onPrevious = () => {
-    slide.prev();
-  };
-
-  const onNext = () => {
-    slide.next();
-  };
 
   const renderContentDV = (listContent, col) => {
     return listContent.map((item, index) => {
@@ -72,7 +59,7 @@ function Mien() {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              <img src={item} />
+              <img src={item} alt="img"/>
             </FadeIn>
           </LazyLoad>
         </div>
@@ -226,11 +213,9 @@ function Mien() {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4023672.179095975!2d107.19344705575989!3d9.986482318984237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2zUGjDuiBRdeG7kWM!5e0!3m2!1svi!2s!4v1601308539741!5m2!1svi!2s"
                     width="600"
                     height="450"
-                    frameborder="0"
                     style={{ border: 0 }}
-                    allowfullscreen=""
                     aria-hidden="false"
-                    tabindex="0"></iframe>
+                  ></iframe>
                 </Col>
                 <Divider />
               </Row>

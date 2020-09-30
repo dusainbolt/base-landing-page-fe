@@ -15,7 +15,7 @@ function CarouselPage({ listImage, sideContent = null, className, type = "img" }
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
               {index !== IMG_SLIDE_TOP.length - 1 || type === "img" ? (
-                <img src={item} />
+                <img src={item} alt="img"/>
               ) : (
                 <video loop autoPlay>
                   <source src={item} type="video/mp4" />

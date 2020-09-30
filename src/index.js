@@ -7,7 +7,6 @@ import * as serviceWorker from "./serviceWorker";
 import { persistor, store, sagaMiddleware } from "./redux/configStore";
 import { PersistGate } from "redux-persist/es/integration/react";
 import { Provider } from "react-redux";
-import api from "./services/api";
 import rootSaga from "./redux/rootSaga";
 import "antd/dist/antd.css";
 

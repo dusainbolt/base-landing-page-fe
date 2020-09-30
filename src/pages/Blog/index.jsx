@@ -10,7 +10,6 @@ import {
 } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
 import CardBlogDoc from "../../components/CardBlogDoc";
-import IMG_MIEN_BAC from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
 import CardBlogNgang from "../../components/CardBlogNgang";
 import CardBlogTrend from "../../components/CardBlogTrend";
 import { getTypeTravel, onRedirect } from "../../utils";

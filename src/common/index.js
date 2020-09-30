@@ -1,6 +1,5 @@
 import * as Yup from "yup";
 import { getI18n } from "react-i18next";
-import { checkStringRange } from "../utils";
 
 //note:
 // /^[A-Za-z0-9 ]+$/ "true",

@@ -1,4 +1,4 @@
-import { Col, Row, Divider, Anchor } from "antd";
+import { Col, Row, Divider } from "antd";
 import React from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
@@ -19,7 +19,6 @@ import {
 } from "@ant-design/icons";
 import CardBlogDoc from "../../components/CardBlogDoc";
 import { getTypeTravel } from "../../utils";
-const { Link } = Anchor;
 
 function BlogChiTiet() {
   const renderContentPhuHop = () => {
@@ -74,7 +73,7 @@ function BlogChiTiet() {
                   </div>
                 </div>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_1} />
+                  <img src={IMG_BLOG_ITEM_1} alt="img"/>
                 </div>
                 <div id="anchor-1" className="blog-item__title-page small">1. Bãi Sao Phú Quốc</div>
                 <div className="blog-item__title-img-page">
@@ -93,7 +92,7 @@ function BlogChiTiet() {
                   phá hết 10 bãi biển Phú Quốc đẹp trong bài viết này đấy.{" "}
                 </p>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_2} />
+                  <img src={IMG_BLOG_ITEM_2} alt="img"/>
                 </div>
                 <p>
                   Khá nhiều du khách chọn Bãi Sao là một trong những bãi biển đẹp nhất ở Phú Quốc.
@@ -103,7 +102,7 @@ function BlogChiTiet() {
                   hay Maldives.{" "}
                 </p>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_3} />
+                  <img src={IMG_BLOG_ITEM_3} alt="img"/>
                 </div>
                 <p>
                   "Săn" sao biển cũng là hoạt động được du khách yêu thích khi đến Bãi Sao Phú Quốc.
@@ -123,7 +122,7 @@ function BlogChiTiet() {
                 </p>
                 <div id="anchor-2" className="blog-item__title-page small">2. Bãi Trường Phú Quốc</div>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_4} />
+                  <img src={IMG_BLOG_ITEM_4} alt="img"/>
                 </div>
                 <p>
                   Kéo dài từ Dinh Cậu đến Khoé Tàu Rũ, Bãi Trường rộng đến 20 héc ta và được người
@@ -140,7 +139,7 @@ function BlogChiTiet() {
                 </p>
                 <div id="anchor-3" className="blog-item__title-page small">3. Làng Chài Rạch Vẹm</div>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_5} />
+                  <img src={IMG_BLOG_ITEM_5} alt="img"/>
                 </div>
                 <p>
                   Cách trung tâm thị trấn Dương Đông khoảng 25Km, Làng Chài Rạch Vẹm là điểm đến lý
@@ -155,7 +154,7 @@ function BlogChiTiet() {
                   với du khách muốn hoà mình cùng thiên nhiên.
                 </p>
                 <div className="blog-item__image-page">
-                  <img src={IMG_BLOG_ITEM_6} />
+                  <img src={IMG_BLOG_ITEM_6} alt="img"/>
                 </div>
                 <p>
                   Để đến Làng Chài Rạch Vẹm, bạn đi đường Hùng Vương qua cầu Cầu Cạn, rẽ phải ở ngã
@@ -182,7 +181,6 @@ function BlogChiTiet() {
                 <h1 className="blog__title blog-item__title">Phù hợp với bạn</h1>
                 <div className="blog__underline"></div>
                 {renderContentPhuHop()}
-                
               </Col>
             </Row>
             <Divider />

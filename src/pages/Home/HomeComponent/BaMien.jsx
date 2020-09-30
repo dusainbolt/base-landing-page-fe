@@ -16,7 +16,7 @@ function BaMien() {
           <Row>
             <Col span={12} order={1}>
               <div className="travel-vn__image-wrapper">
-                <img src={IMG_MIEN_BAC} />
+                <img src={IMG_MIEN_BAC} alt="img"/>
               </div>
             </Col>
             <Col span={12} order={2}>
@@ -27,7 +27,9 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_BAC[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_BAC[2]}</p>
                   <div className="button">
-                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
+                    <Button onClick={() => onRedirect("/mien")} className="primary no-bg">
+                      Xem thêm
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -40,7 +42,7 @@ function BaMien() {
           <Row>
             <Col span={12} order={2}>
               <div className="travel-vn__image-wrapper">
-                <img src={IMG_MIEN_TRUG} />
+                <img  alt="img" src={IMG_MIEN_TRUG} />
               </div>
             </Col>
             <Col span={12} order={1}>
@@ -51,7 +53,9 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_TRUG[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_TRUG[2]}</p>
                   <div className="button">
-                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
+                    <Button onClick={() => onRedirect("/mien")} className="primary no-bg">
+                      Xem thêm
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -65,7 +69,7 @@ function BaMien() {
           <Row>
             <Col span={12} order={1}>
               <div className="travel-vn__image-wrapper">
-                <img src={IMG_MIEN_NAM} />
+                <img alt="img" src={IMG_MIEN_NAM} />
               </div>
             </Col>
             <Col span={12} order={2}>
@@ -76,7 +80,9 @@ function BaMien() {
                   <p>{CONTENT_TRAVEL.MIEN_BAC[1]}</p>
                   <p>{CONTENT_TRAVEL.MIEN_BAC[2]}</p>
                   <div className="button">
-                  <Button onClick={() => onRedirect("/mien")} className="primary no-bg">Xem thêm</Button>
+                    <Button onClick={() => onRedirect("/mien")} className="primary no-bg">
+                      Xem thêm
+                    </Button>
                   </div>{" "}
                 </div>
               </div>

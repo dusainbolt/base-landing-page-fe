@@ -6,7 +6,7 @@ function CardBlogNgang({ img, title, description, date, type }) {
     <div className="blog__card">
       <Row gutter={[16, 8]}>
         <Col span={8}>
-          <img src={img} />
+          <img src={img} alt="img"/>
         </Col>
         <Col span={16}>
           <span className="blog__span-title">{type}</span>

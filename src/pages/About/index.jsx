@@ -1,4 +1,4 @@
-import { Col, Row, Tabs } from "antd";
+import { Row, Tabs } from "antd";
 import React, { useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";

@@ -1,5 +1,4 @@
 import { Card } from "antd";
-import Meta from "antd/lib/card/Meta";
 import React from "react";
 import { StarFilled, ThunderboltFilled } from "@ant-design/icons";
 import { convertSalePrice, formatCommaNumber } from "../../utils";

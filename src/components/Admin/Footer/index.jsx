@@ -76,7 +76,7 @@ export default function commonFooter() {
             <Col className="footer__bottom--col col-payment" span={5}>
               <Button ghost>Hỏi đáp STRAVEL</Button>
               <div className="footer__bottom--title payment">KÊNH THANH TOÁN</div>
-              <img style={{width: "135px"}} src={IMG_PAY_FOOTER} />
+              <img style={{width: "135px"}} src={IMG_PAY_FOOTER} alt="img"/>
             </Col>
           </Row>
         </div>

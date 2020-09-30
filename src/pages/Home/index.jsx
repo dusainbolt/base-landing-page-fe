@@ -52,7 +52,7 @@ function Home() {
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
               {index !== IMG_SLIDE_TOP.length - 1 ? (
-                <img src={item} />
+                <img src={item} alt="img"/>
               ) : (
                 <video loop autoPlay>
                   <source src={item} type="video/mp4" />
@@ -72,7 +72,7 @@ function Home() {
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              <img src={item} />
+              <img src={item} alt="img"/>
             </FadeIn>
           </LazyLoad>
         </div>

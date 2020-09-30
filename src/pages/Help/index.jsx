@@ -1,4 +1,4 @@
-import { Col, Row, Tabs } from "antd";
+import { Col, Row } from "antd";
 import React, { useMemo, useRef } from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
@@ -48,7 +48,7 @@ function Help() {
           onClick={() => onClickPopularHelp(index + 1, 0)}
           className="help__row--col"
           span={6}>
-          <img src={item.img} />
+          <img src={item.img} alt="img"/>
           <div className="help__info">
             <h3 className="help__info--title">{item.title}</h3>
             <span>{item.description}</span>
@@ -64,7 +64,7 @@ function Help() {
         <Menu.Item
           key={index + 1}
           className={index + 1 === indexMenu ? "ant-menu-item-selected" : ""}
-          icon={<img className="help__icon-menu" src={item.img} />}>
+          icon={<img className="help__icon-menu" src={item.img} alt="img"/>}>
           {item.title}
         </Menu.Item>
       );
