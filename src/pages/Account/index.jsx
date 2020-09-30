@@ -43,7 +43,6 @@ function Account() {
 
   return (
     <div className="home about ">
-      <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page" />
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row account">
