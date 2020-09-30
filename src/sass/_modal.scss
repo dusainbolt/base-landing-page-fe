@@ -1,0 +1,11 @@
+.modal {
+    &__title{
+        @extend .title-description;
+    }
+    .ant-input {
+        height: 35px;
+    }
+    button.ant-btn {
+        height: 35px;
+    }
+}
