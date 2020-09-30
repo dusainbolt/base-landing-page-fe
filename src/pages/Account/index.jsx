@@ -20,7 +20,7 @@ import {
 import { onRedirect } from "../../utils";
 import CardContent from "../../components/CardContent";
 function Account() {
-  
+
   const renderContentDV = () => {
     return DICH_VU.map((item, index) => {
       return (
@@ -120,7 +120,7 @@ function Account() {
                     </Button>
                   </div>
                   <h3 className="title-description item">DỊCH VỤ ĐƯỢC YÊU THÍCH</h3>
-                  <Row gutter={[16, 16]}>
+                  <Row gutter={[8, 16]}>
                     {renderContentDV()}
                   </Row>
                 </div>
