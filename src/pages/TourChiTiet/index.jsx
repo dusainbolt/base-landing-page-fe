@@ -20,9 +20,9 @@ import {
   AppstoreAddOutlined,
 } from "@ant-design/icons";
 import { getRandomInt, onRedirect, shuffleArray } from "../../utils";
-import { useState } from "react";
 import IMG_BLOG_ITEM_1 from "../../common/image/DichVuPhoBien/dich_vu_3.jpg";
 import TextArea from "antd/lib/input/TextArea";
+import AvatarDefault from "../../common/image/avatar.png";
 const configInfoTop = [
   {
     title: "Hoàn huỷ miễn phí trong 48h",
@@ -62,8 +62,7 @@ function Tour() {
           Rất hài lòng
         </span>,
       ],
-      avatar:
-        "https://timban.baotreonline.com/wp-content/themes/gwangi-sensual/assets/images/avatars/user-avatar.png",
+      avatar: AvatarDefault,
       content: (
         <p>
           Một trải nghiệm tuyệt vời trong chuyến bay kéo dài 45 phút của chúng tôi ở đảo Hồng Kông,
@@ -85,8 +84,7 @@ function Tour() {
           Rất hài lòng
         </span>,
       ],
-      avatar:
-        "https://timban.baotreonline.com/wp-content/themes/gwangi-sensual/assets/images/avatars/user-avatar.png",
+      avatar: AvatarDefault,
       content: (
         <p>
           Trải nghiệm tuyệt vời để khám phá HK theo một cách khác. Một chút đắt tiền nhưng chắc chắn

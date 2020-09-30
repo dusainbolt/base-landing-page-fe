@@ -12,11 +12,11 @@ import {
   LeftOutlined,
 } from "@ant-design/icons";
 import {
-  IMG_SLIDE_TOP,
   IMG_SLIDE_ADS,
   DICH_VU,
   ADDRESS,
   LQ_BLOG,
+  IMG_SLIDE_TRANG_CHU
 } from "../../common/configLandingPage";
 import BaMien from "./HomeComponent/BaMien";
 import CardAddress from "../../components/Dot";
@@ -46,12 +46,12 @@ function Home() {
   };
 
   const renderListCarousel = () => {
-    return IMG_SLIDE_TOP.map((item, index) => {
+    return IMG_SLIDE_TRANG_CHU.map((item, index) => {
       return (
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
             <FadeIn delay={100} transitionDuration={500}>
-              {index !== IMG_SLIDE_TOP.length - 1 ? (
+              {index !== IMG_SLIDE_TRANG_CHU.length - 1 ? (
                 <img src={item} alt="img"/>
               ) : (
                 <video loop autoPlay>

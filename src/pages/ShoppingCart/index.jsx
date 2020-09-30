@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, InputNumber } from "antd";
+import { Table, InputNumber, Button } from "antd";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
 import IMG_DV_1 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
@@ -102,6 +102,15 @@ function ShoppingCart() {
                 <EditOutlined /> Chỉnh sửa
               </div>
               <div className="total">{"₫ " + formatCommaNumber(data[0].money + data[1].money)}</div>
+            </div>
+            <div className="shopping-cart__total-bottom">
+              <div className="wrapper">
+                <span>
+                  1 Tổng các dịch vụ : <strong>₫ 2,233,626</strong>
+                  <p>Nhận <b>74</b> credit cho đơn hàng này</p>
+                </span>
+                <Button className="btn-primary">Thanh toán ngay</Button>
+              </div>
             </div>
           </div>
         </FadeIn>

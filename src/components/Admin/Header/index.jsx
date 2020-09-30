@@ -27,7 +27,7 @@ function CommonHeader({ toggleMenu, refHeader }) {
         <div className="header__icon-wrapper">
           <SearchOutlined className="header__icon--item" />
           <ShoppingCartOutlined onClick={() => onRedirect("/shoppingcart")} className="header__icon--item" />
-          <UserOutlined className="header__icon--item" />
+          <UserOutlined onClick={() => onRedirect("/account")}  className="header__icon--item" />
         </div>
       </div>
     </div>

@@ -1,8 +1,32 @@
 .shopping-cart {
   margin-top: 120px;
+  margin-bottom: 120px;
   &__img {
     width: 120px;
     margin-top: -12px;
+  }
+  &__total-bottom {
+    background-color: white;
+    height: 90px;
+
+    .wrapper{
+      float: right;
+      padding-right: 100px;
+      display: flex;
+      align-items: center;
+      >span{
+        font-size: 14px;
+        padding-top: 15px;
+        margin-right: 15px;
+        line-height: 21px;
+      }
+      strong {
+        font-size: 24px;
+        margin-left: 10px;
+        font-weight: 600;
+        color: $primary-color-bold;
+      }
+    }
   }
   &__info {
     cursor: pointer;
@@ -37,21 +61,21 @@
     display: flex;
     padding-left: 60px;
     align-items: center;
-    >div {
-        cursor: pointer;
+    > div {
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 35px;
+      .anticon {
         font-size: 14px;
-        margin-right: 35px;
-        .anticon{
-            font-size: 14px;
-        }
+      }
     }
-    div.total{
+    div.total {
       margin-left: auto;
       margin-right: 100px;
       font-weight: bold;
-    }   
+    }
   }
-  .ant-table-tbody{
+  .ant-table-tbody {
     margin-top: 15px;
   }
 }

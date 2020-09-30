@@ -41,13 +41,22 @@ import BLOG_NB_1 from "./image/BlogLienQuan/1.jpg";
 import BLOG_NB_2 from "./image/BlogLienQuan/2.webp";
 import BLOG_NB_3 from "./image/BlogLienQuan/3.jpg";
 
-
 import ADDRESS_1 from "./image/imageAddress/1.webp";
 import ADDRESS_2 from "./image/imageAddress/2.jpg";
 import ADDRESS_3 from "./image/imageAddress/3.jpg";
 import ADDRESS_4 from "./image/imageAddress/4.jpg";
 import ADDRESS_5 from "./image/imageAddress/5.jpg";
 import ADDRESS_6 from "./image/imageAddress/6.jpg";
+
+import SLIDE_TRANG_CHU_1 from "./image/SlideTrangChu/1.PNG";
+import SLIDE_TRANG_CHU_2 from "./image/SlideTrangChu/2.PNG";
+import SLIDE_TRANG_CHU_3 from "./image/SlideTrangChu/3.PNG";
+
+import SLIDE_ABOUT_1 from "./image/SlideGioiThieu/1.PNG";
+import SLIDE_ABOUT_2 from "./image/SlideGioiThieu/2.PNG";
+import SLIDE_ABOUT_3 from "./image/SlideGioiThieu/3.PNG";
+import SLIDE_ABOUT_4 from "./image/SlideGioiThieu/4.PNG";
+import SLIDE_ABOUT_5 from "./image/SlideGioiThieu/5.PNG";
 
 export const ADDRESS = [
   {
@@ -79,19 +88,23 @@ export const ADDRESS = [
 export const BLOG_POPULAR = [
   {
     title: "Tin Vui Mùa COVID-19: Nhật Bản & Hàn Quốc Nới Lỏng Nhập Cảnh Cho Du Khách Việt Nam",
-    description: "Tin tức Nhật Bản và Hàn Quốc đang “rục rịch” mở cửa du lịch cho du khách đến từ Việt Nam đang gây xôn xao cộng đồng mạng. #teamKlook đã thấy nhớ xứ sở hoa anh đào và đất nước củ sâm hay chưa?",
+    description:
+      "Tin tức Nhật Bản và Hàn Quốc đang “rục rịch” mở cửa du lịch cho du khách đến từ Việt Nam đang gây xôn xao cộng đồng mạng. #teamKlook đã thấy nhớ xứ sở hoa anh đào và đất nước củ sâm hay chưa?",
   },
   {
     title: "Hướng Dẫn Chinh Phục IconSiam Bangkok, Thái Lan",
-    description: "Ở thành phố nhộn nhịp như Bangkok, ngoài nền ẩm thực tuyệt vời, nơi đây còn được biết đến với rất nhiều trung tâm mua sắm và khu phức hợp. Tuy nhiên, có một nơi độc đáo để làm nên sự nổi bật ở đây. Trung tâm mua sắm IconSiam mới mở gần đây đang rất được du khách và người dân ưa chuộng.",
+    description:
+      "Ở thành phố nhộn nhịp như Bangkok, ngoài nền ẩm thực tuyệt vời, nơi đây còn được biết đến với rất nhiều trung tâm mua sắm và khu phức hợp. Tuy nhiên, có một nơi độc đáo để làm nên sự nổi bật ở đây. Trung tâm mua sắm IconSiam mới mở gần đây đang rất được du khách và người dân ưa chuộng.",
   },
   {
     title: "Cẩm Nang Du Lịch Vũng Tàu Tự Túc Siêu Vui, Siêu Tiết Kiệm",
-    description: "Du lịch Vũng Tàu tự túc, tưởng không vui mà vui không tưởng. Bỏ túi ngay bí kíp vi vu dưới đây để hành trình đi biển thêm phần hào hứng nhé.",
+    description:
+      "Du lịch Vũng Tàu tự túc, tưởng không vui mà vui không tưởng. Bỏ túi ngay bí kíp vi vu dưới đây để hành trình đi biển thêm phần hào hứng nhé.",
   },
   {
     title: "BACK-UP PLAN CHO MỘT NGÀY MƯA Ở MARINA BAY SANDS",
-    description: "Nếu trót du lịch mùa mưa bão, thì hẳn ai cũng dự phòng cho mình một plan backup rồi nhỉ!",
+    description:
+      "Nếu trót du lịch mùa mưa bão, thì hẳn ai cũng dự phòng cho mình một plan backup rồi nhỉ!",
   },
   {
     title: "Cập nhật: Những điều cần biết về Airbnb khi đến Nhật Bản",
@@ -99,8 +112,9 @@ export const BLOG_POPULAR = [
   },
   {
     title: "10 khách sạn táo bạo tại Nhật Bản dành cho các cặp đôi",
-    description: "Nếu bạn có cơ hội trải qua kì nghỉ lãng mạn của mình tại Nhật Bản, hãy dành cho người yêu sự bất ngờ tại một trong những khách sạn tình nhân ma mị thú vị này.",
-  }
+    description:
+      "Nếu bạn có cơ hội trải qua kì nghỉ lãng mạn của mình tại Nhật Bản, hãy dành cho người yêu sự bất ngờ tại một trong những khách sạn tình nhân ma mị thú vị này.",
+  },
 ];
 
 export const LQ_BLOG = [
@@ -238,11 +252,18 @@ export const MenuTop = [
 
 export const IMG_SLIDE_TOP = [IMG_TOP_1, IMG_TOP_2, IMG_TOP_3, IMG_TOP_4];
 export const IMG_SIDE_ABOUT = [
-  IMG_SLIDE_PAGE_1,
-  IMG_SLIDE_PAGE_2,
-  IMG_SLIDE_PAGE_3,
-  IMG_SLIDE_PAGE_4,
-  IMG_SLIDE_PAGE_5,
+  SLIDE_ABOUT_1,
+  SLIDE_ABOUT_2,
+  SLIDE_ABOUT_3,
+  SLIDE_ABOUT_4,
+  SLIDE_ABOUT_5,
+];
+
+export const IMG_SLIDE_TRANG_CHU = [
+  SLIDE_TRANG_CHU_1,
+  SLIDE_TRANG_CHU_2,
+  SLIDE_TRANG_CHU_3,
+  IMG_TOP_4,
 ];
 export const IMG_SLIDE_MIEN = [IMG_TOP_3];
 export const IMG_SLIDE_ADS = [IMG_TOP_2, IMG_TOP_3];

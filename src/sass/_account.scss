@@ -1,0 +1,65 @@
+.account {
+  margin-top: 35px;
+  &__menu {
+    background-color: white;
+    &--info {
+      padding-top: 35px;
+      width: 100%;
+      text-align: center;
+      .ant-avatar {
+        border: solid 2px #fff;
+        box-shadow: 0 4px 12px 0 rgba(255, 87, 34, 0.12);
+      }
+      h4 {
+        overflow: hidden;
+        word-break: break-all;
+        font-size: 24px;
+        padding-top: 15px;
+        margin-bottom: 0;
+      }
+      p {
+        color: #4c87e6;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+    &--item-wrapper {
+    }
+    &--item {
+      padding: 8px 20px;
+      font-size: 16px;
+      width: 100%;
+      display: flex;
+      .anticon {
+          font-size: 20px;
+          margin-right: 12px;
+          margin-top: 2px;
+      }
+      .right-item {
+          font-weight: bold;
+          margin-left: auto;
+      }
+    }
+    .divider-menu {
+      margin: 12px 0;
+    }
+  }
+  &__content-wrapper{
+      padding: 30px;
+      width: 100%;
+      background-color: white;
+      .des-empty{
+          margin: auto;
+          width: 500px;
+          text-align: center;
+      }
+      .button{
+          button {
+              width: 200px;
+          }
+      }
+      .ant-card-cover{
+          height: 100px;
+      }
+  }
+}
