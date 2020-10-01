@@ -3,10 +3,10 @@ import React from "react";
 import FadeIn from "react-fade-in";
 import LazyLoad from "react-lazyload";
 import {
-  IMG_SIDE_ABOUT,
   XU_HUONG_MOi_NHAT,
   LQ_BLOG,
   BLOG_POPULAR,
+  IMG_SIDE_BLOG,
 } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
 import CardBlogDoc from "../../components/CardBlogDoc";
@@ -17,7 +17,10 @@ import { getTypeTravel, onRedirect } from "../../utils";
 function Blog() {
   const renderXuHuong = () => {
     return XU_HUONG_MOi_NHAT.map((item, index) => (
-      <div onClick={() => onRedirect("/blog-chi-tiet")} key={index} className="home__row--col-content">
+      <div
+        onClick={() => onRedirect("/blog-chi-tiet")}
+        key={index}
+        className="home__row--col-content">
         <CardBlogNgang
           title={item.title}
           description={item.description}
@@ -48,7 +51,10 @@ function Blog() {
 
   const renderBlogPopular = () => {
     return BLOG_POPULAR.map((item, index) => (
-      <div onClick={() => onRedirect("/blog-chi-tiet")} key={index} className="home__row--col-content">
+      <div
+        onClick={() => onRedirect("/blog-chi-tiet")}
+        key={index}
+        className="home__row--col-content">
         <CardBlogTrend title={item.title} description={item.description} count={index + 1} />
       </div>
     ));
@@ -56,7 +62,7 @@ function Blog() {
 
   return (
     <div className="home about blog">
-      <CarouselPage listImage={IMG_SIDE_ABOUT} className="home__carousel-page" />
+      <CarouselPage listImage={IMG_SIDE_BLOG} className="home__carousel-page" />
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="home__row">

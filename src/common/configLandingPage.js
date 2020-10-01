@@ -58,6 +58,14 @@ import SLIDE_ABOUT_3 from "./image/SlideGioiThieu/3.PNG";
 import SLIDE_ABOUT_4 from "./image/SlideGioiThieu/4.PNG";
 import SLIDE_ABOUT_5 from "./image/SlideGioiThieu/5.PNG";
 
+import SLIDE_BLOG_1 from "./image/BlogSlide/01.jpg";
+import SLIDE_BLOG_2 from "./image/BlogSlide/02.jpg";
+import SLIDE_BLOG_3 from "./image/BlogSlide/03.jpg";
+import SLIDE_BLOG_4 from "./image/BlogSlide/04.jpg";
+import SLIDE_BLOG_5 from "./image/BlogSlide/05.jpg";
+
+export const IMG_SIDE_BLOG = [SLIDE_BLOG_4, SLIDE_BLOG_1, SLIDE_BLOG_2, SLIDE_BLOG_3, SLIDE_BLOG_5];
+
 export const ADDRESS = [
   {
     title: "Phú Quốc",

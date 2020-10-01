@@ -58,7 +58,7 @@ function Mien() {
       return (
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
-            <FadeIn delay={100} transitionDuration={500}>
+            <FadeIn delay={100} transitionDuratioxn={500}>
               <img src={item} alt="img"/>
             </FadeIn>
           </LazyLoad>
@@ -96,11 +96,10 @@ function Mien() {
       <CarouselPage
         listImage={IMG_SIDE_ABOUT}
         sideContent={
-          <ContentSide titleSmall="Thay đổi điểm đến" titleCity="MIỀN" titleButton="Việt Nam" />
+          <ContentSide titleSmall="Thay đổi điểm đến" titleCity="MIỀN BẮC" titleButton="Việt Nam" />
         }
         className="home__carousel-page content-side"
       />
-
       <LazyLoad height={800} throttle={400}>
         <FadeIn delay={100} transitionDuration={500}>
           <div className="tour__content-wrapper top">
@@ -108,7 +107,7 @@ function Mien() {
               <Col span={24}>
                 <Breadcrumb separator=">">
                   <Breadcrumb.Item>Trang Chủ</Breadcrumb.Item>
-                  <Breadcrumb.Item>Miền</Breadcrumb.Item>
+                  <Breadcrumb.Item>Miền Bắc</Breadcrumb.Item>
                 </Breadcrumb>
               </Col>
             </Row>
