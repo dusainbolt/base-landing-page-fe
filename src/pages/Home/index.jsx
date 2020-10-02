@@ -16,7 +16,7 @@ import {
   DICH_VU,
   ADDRESS,
   LQ_BLOG,
-  IMG_SLIDE_TRANG_CHU
+  IMG_SLIDE_TRANG_CHU, IMG_SIDE_ADS_MIEN
 } from "../../common/configLandingPage";
 import BaMien from "./HomeComponent/BaMien";
 import CardAddress from "../../components/Dot";
@@ -67,7 +67,7 @@ function Home() {
   };
 
   const renderListCarouselAds = () => {
-    return IMG_SLIDE_ADS.map((item, index) => {
+    return IMG_SIDE_ADS_MIEN.map((item, index) => {
       return (
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>

@@ -64,6 +64,130 @@ import SLIDE_BLOG_3 from "./image/BlogSlide/03.jpg";
 import SLIDE_BLOG_4 from "./image/BlogSlide/04.jpg";
 import SLIDE_BLOG_5 from "./image/BlogSlide/05.jpg";
 
+
+import SLIDE_ADS_MIEN_1 from "./image/MienBac/Q1.JPG";
+import SLIDE_ADS_MIEN_2 from "./image/MienBac/Q2.JPG";
+import IMG_MIEN_BAI_VIET_1 from "./image/MienBac/B1.jpg";
+import IMG_MIEN_BAI_VIET_2 from "./image/MienBac/B2.jpg";
+import IMG_MIEN_BAI_VIET_3 from "./image/MienBac/B3.jpg";
+import IMG_MIEN_BAI_VIET_4 from "./image/MienBac/B4.jpg";
+import IMG_MIEN_BAI_VIET_5 from "./image/MienBac/B5.jpg";
+import IMG_MIEN_BAI_VIET_6 from "./image/MienBac/B6.jpg";
+import IMG_MIEN_BAI_VIET_7 from "./image/MienBac/B7.jpg";
+import IMG_MIEN_BAI_VIET_8 from "./image/MienBac/B8.jpg";
+import IMG_MIEN_NOI_TIENG_1 from "./image/MienBac/D1.jpg";
+import IMG_MIEN_NOI_TIENG_2 from "./image/MienBac/D2.jpg";
+import IMG_MIEN_NOI_TIENG_3 from "./image/MienBac/D3.jpg";
+import IMG_MIEN_NOI_TIENG_4 from "./image/MienBac/D4.jpg";
+
+
+export const MIEN_HD_NOI_TIENG= [
+  {
+    img: IMG_MIEN_NOI_TIENG_1,
+    title: "Du lịch Đông Bắc - Hà Nội - Hà Giang - Lũng Cú - Cao Bằng",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_MIEN_NOI_TIENG_2,
+    title: "Du lịch Miền Bắc - Hạ Long - Ninh Bình - Tràng An - Bái Đính",
+    description: "Du lịch Miền Bắc - Hạ Long - Ninh Bình - Tràng An - Bái Đính",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_NOI_TIENG_3,
+    title: "Du lịch Miền Bắc - Đông Bắc - Tây Bắc - Hà Nội - Hà Giang",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_NOI_TIENG_4,
+    title: "Du lịch Hà Giang - Quản Bạ - Đồng Văn - Lũng Cú - Mèo Vạc",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+]
+
+export const MIEN_BAI_VIET = [
+  {
+    img: IMG_MIEN_BAI_VIET_1,
+    title: "Tour Hà Nội - thác Bản Giốc - hồ Ba Bể 3 ngày 2 đêm",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+  {
+    img: IMG_MIEN_BAI_VIET_2,
+    title: "Tour Hà Giang - cao nguyên đá - thác Bản Giốc - động Ngườm Ngao 4 ngày 3 đêm",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_3,
+    title: "Du lịch Miền Bắc - Hà Giang - Quản Bạ - Đồng Văn - Lũng Cú",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_4,
+    title: "Du lịch Miền Bắc - Hà Nội - Hạ Long- Sapa - Fansipan 4N3Đ",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_5,
+    title: "Du lịch Miền Bắc - Đông Bắc - Hà Giang 5 ngày 4 đêm",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_6,
+    title: "Tour Hà Nội - Hạ Long - Lào Cai - Sapa 5 ngày 4 đêm",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_7,
+    title: "Du lịch Hà Nội - Mai Châu - Mộc Châu - Sơn La - Sapa - Yên Bái",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },  {
+    img: IMG_MIEN_BAI_VIET_8,
+    title: "Du lịch Miền Bắc - Hà Nội - Yên Tử - Hạ Long - Tràng An - Sapa",
+    description: "Dịch vụ nâng cấp:Trải nghiệm dịch vụ 5*, tắm khoáng khung giờ Vàng",
+    price: 998000,
+    rate: 4.5,
+    comment: 1121,
+    order: 80,
+  },
+]
+
+export const IMG_SIDE_ADS_MIEN = [SLIDE_ADS_MIEN_1, SLIDE_ADS_MIEN_2];
 export const IMG_SIDE_BLOG = [SLIDE_BLOG_4, SLIDE_BLOG_1, SLIDE_BLOG_2, SLIDE_BLOG_3, SLIDE_BLOG_5];
 
 export const ADDRESS = [

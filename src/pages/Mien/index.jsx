@@ -5,7 +5,10 @@ import LazyLoad from "react-lazyload";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import {
   IMG_SIDE_ABOUT,
+  IMG_SIDE_ADS_MIEN,
   IMG_SLIDE_ADS,
+  MIEN_BAI_VIET,
+  MIEN_HD_NOI_TIENG,
   TOUR_BAN_CHAY,
 } from "../../common/configLandingPage";
 import CarouselPage from "../../components/CaraouselPage";
@@ -54,7 +57,7 @@ function Mien() {
   };
 
   const renderListCarouselAds = () => {
-    return IMG_SLIDE_ADS.map((item, index) => {
+    return IMG_SIDE_ADS_MIEN.map((item, index) => {
       return (
         <div key={index} className="home__wrapper--image">
           <LazyLoad height={800} throttle={400}>
@@ -148,8 +151,7 @@ function Mien() {
             <LazyLoad height={800} throttle={400}>
               <FadeIn delay={100} transitionDuration={500}>
                 <div className="tour__row">
-                  <Row gutter={[16, 16]}>{renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
-                  <Row gutter={[16, 16]}>{renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
+                  <Row gutter={[16, 16]}>{renderContentDV(MIEN_BAI_VIET, 6)}</Row>
                 </div>
               </FadeIn>
             </LazyLoad>
@@ -157,7 +159,7 @@ function Mien() {
               <FadeIn delay={100} transitionDuration={500}>
                 <div className="tour__row">
                   <h1 className="home__row--title">Hoạt Động Du Lịch Phú Quốc Nổi Tiếng</h1>
-                  <Row gutter={[16, 16]}>{renderContentDV(TOUR_BAN_CHAY, 6)}</Row>
+                  <Row gutter={[16, 16]}>{renderContentDV(MIEN_HD_NOI_TIENG, 6)}</Row>
                 </div>
               </FadeIn>
             </LazyLoad>
