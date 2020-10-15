@@ -31,7 +31,7 @@ function CardContentTwo({
               </div>
             </div>
           </Col>
-          <Col span={6}>
+          <Col onClick={callBackBtn} span={6}>
             <div className="content-small">
               <div className="img-bg">
                 <img src={img_2} alt="img"/>

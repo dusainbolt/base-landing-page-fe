@@ -20,7 +20,7 @@ import CardTwoNgang from "../../components/CardTwoNgang";
 import FilterAddress from "../../components/FilterAddress";
 
 import FilterRow from "../../components/FilterRow";
-import { shuffleArray } from "../../utils";
+import { onRedirect, shuffleArray } from "../../utils";
 
 function Mien() {
 
@@ -29,7 +29,7 @@ function Mien() {
   const renderContentDV = (listContent, col) => {
     return listContent.map((item, index) => {
       return (
-        <Col key={index} span={col}>
+        <Col onClick={()=>onRedirect("/tour-chi-tiet")} key={index} span={col}>
           <div className="home__row--col-content card-content">
             <CardContent
               title={item.title}
@@ -77,7 +77,7 @@ function Mien() {
   const renderContentDV1 = useMemo(() => {
     return shuffleArray(TOUR_BAN_CHAY).map((item, index) => {
       return (
-        <Col key={index} span={8}>
+        <Col onClick={()=>onRedirect("/tour-chi-tiet")} key={index} span={8}>
           <div className="home__row--col-content card-content">
             <CardContent
               title={item.title}
@@ -144,7 +144,7 @@ function Mien() {
           lịch là tận hưởng! Rất nhiều hoạt động du lịch đang chờ bạn khám phá, mục tiêu
           của Klook luôn là kết nối du khách với những trải nghiệm du lịch thú vị.`}
                   titleBtn="Xem thêm"
-                  callBackBtn={() => console.log(123123)}
+                  callBackBtn={()=>onRedirect("/blog-chi-tiet")}
                 />
               </FadeIn>
             </LazyLoad>

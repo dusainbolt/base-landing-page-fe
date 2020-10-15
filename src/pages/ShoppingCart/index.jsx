@@ -5,7 +5,7 @@ import LazyLoad from "react-lazyload";
 import IMG_DV_1 from "../../common/image/DichVuPhoBien/dich_vu_2.jpg";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { formatCommaNumber } from "../../utils";
-
+import CountDown from "../../components/ModalConfirm";
 function ShoppingCart() {
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {},
@@ -107,9 +107,13 @@ function ShoppingCart() {
               <div className="wrapper">
                 <span>
                   1 Tổng các dịch vụ : <strong>₫ 2,233,626</strong>
-                  <p>Nhận <b>74</b> credit cho đơn hàng này</p>
+                  <p>
+                    Nhận <b>74</b> credit cho đơn hàng này
+                  </p>
                 </span>
-                <Button className="btn-primary">Thanh toán ngay</Button>
+                <Button onClick={() => CountDown()} className="btn-primary">
+                  Thanh toán ngay
+                </Button>
               </div>
             </div>
           </div>

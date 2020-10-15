@@ -83,7 +83,7 @@ function Home() {
   const renderContentDV = () => {
     return DICH_VU.map((item, index) => {
       return (
-        <Col key={index} span={6}>
+        <Col onClick={() => onRedirect("/tour-chi-tiet")} key={index} span={6}>
           <div className="home__row--col-content card-content">
             <CardContent
               title={item.title}

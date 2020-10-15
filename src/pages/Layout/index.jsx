@@ -28,7 +28,7 @@ function App({ component: Mycomponent, classes, name, ...remainProps }) {
       } else if (scrollTop < 64) {
         showBodyHeader(headerRef);
       }
-    }else{
+    }else if(headerRef && headerRef?.style){
       showTopHeader(headerRef);
     }
   };
